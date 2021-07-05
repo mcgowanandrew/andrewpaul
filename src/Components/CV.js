@@ -24,6 +24,7 @@ const CV = () => {
 <br/>
 <br/>
 <Heading>Publications:</Heading>
+<br/>
 2020 - Malaise, Self-published<br/>
 2019 - Now That’s What I Call Love, The Photocopy Club<br/>
 2018 - Issue #6: Psalms, Meanwhile Press<br/>
