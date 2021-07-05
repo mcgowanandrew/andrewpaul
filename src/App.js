@@ -1,9 +1,16 @@
-import React from "react"
+import React from "react";
+import styled from "styled-components";
+import { Nav } from "./Navigation";
 
-function App() {
-  return (<div>hi</div>
-   
+const App = () => {
+  return (
+    <NavWrap>
+      <Nav/>
+    </NavWrap>
+ 
   );
-}
+};
 
+const NavWrap = styled.div`
+display:flex;`
 export default App;
