@@ -8,7 +8,7 @@ const About = () => {
           👋 I'm an ex-Printer turned Full-Stack Web Developer. I am currently
           working with HTML, CSS, JavaScript, React.js, Node.js, Express and
           MongoDB. Currently learning Sass and Figma. Outside of Web Development
-          I'm a Photographer and Bookbinder.
+          I'm a Photographer and a Bookbinder.
         </Text>
       </TextWrap>
     </BigWrap>
@@ -29,5 +29,15 @@ const BigWrap = styled.div`
   margin-left: -20vw;
   padding-left: 20vw;
   background-color: rgba(0, 0, 0, 0.7);
+  transition: all 1s ease-out;
+  animation: fadein 1s ease-out;
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 export default About;

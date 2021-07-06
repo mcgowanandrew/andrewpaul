@@ -9,6 +9,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     color:#fff;
     font-size: 10px;
     font-family: 'DM Sans', sans-serif;

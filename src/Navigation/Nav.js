@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Homepage, About, CV,Contact } from "../Components";
-import {Arbus,ClownTown} from "../Components/Projects"
+import { Homepage, About, CV, Contact } from "../Components";
+import { Arbus, ClownTown } from "../Components/Projects";
 import GlobalStyles from "../GlobalStyles";
 import Sidebar from "./Sidebar";
 

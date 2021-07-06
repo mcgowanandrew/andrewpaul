@@ -15,7 +15,7 @@ const Sidebar = () => {
   };
   return (
     <SideWrap>
-      <Title exact to="/">
+      <Title onClick={closeProjects} exact to="/">
         Andrew Paul
       </Title>
       <Link exact to="/about">
@@ -37,7 +37,6 @@ const Sidebar = () => {
       <Link exact to="#">
         <Span onClick={closeProjects}>Other</Span>
       </Link>
- 
     </SideWrap>
   );
 };
@@ -62,12 +61,11 @@ const ProjectsClick = styled.span`
     transition: all 0.3s ease-in-out;
   }
 `;
-const Span = styled.span`
-`;
+const Span = styled.span``;
 const Link = styled(NavLink)`
   font-size: 15px;
-  &:focus{
-color:#ff3d3d;   
+  &:focus {
+    color: #ff3d3d;
   }
 `;
 const Title = styled(NavLink)`
