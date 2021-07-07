@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import Modal from "../Components/Modal/Modal"
 // import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isProjectOpen, setIsProjectOpen] = useState(false);
+  const [isContactOpen,setIsContactOpen]= useState(false)
 
   const toggleOpen = () => {
-    !isOpen ? setIsOpen(true) : setIsOpen(false);
+    !isProjectOpen ? setIsProjectOpen(true) : setIsProjectOpen(false);
   };
+  const handleContactClick=()=>{
+    setIsContactOpen(true)
+
+  }
 
   const closeProjects = () => {
-    setIsOpen(false);
+    setIsProjectOpen(false);
   };
   return (
     <SideWrap>
@@ -26,7 +32,7 @@ const Sidebar = () => {
       </Link>
       <ProjectsClick onClick={toggleOpen}>Projects</ProjectsClick>
 
-      <ProjectWrap isOpen={isOpen}>
+      <ProjectWrap isOpen={isProjectOpen}>
         <Link exact to="/arbus">
           <Span>Arbus</Span>
         </Link>
@@ -34,13 +40,23 @@ const Sidebar = () => {
           <Span>Clown Town</Span>
         </Link>
       </ProjectWrap>
-      <Link exact to="#">
-        <Span onClick={closeProjects}>Other</Span>
-      </Link>
+      
+        <ContactClick onClick={handleContactClick}>Contact</ContactClick>
+    <Modal open={isContactOpen}></Modal>
     </SideWrap>
   );
 };
-
+const ContactClick = styled.span`
+font-size: 15px;
+cursor: pointer;
+&:focus {
+  background-color: none;
+}
+&:hover {
+  color: #666;
+  transition: all 0.3s ease-in-out;
+}
+`;
 const ProjectWrap = styled.div`
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
   transition: 0.5s ease-in-out;
