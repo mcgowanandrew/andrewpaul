@@ -1,26 +1,26 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import Modal from "../Components/Modal/Modal"
+import Modal from "../Components/Modal/Modal";
+import { Contact } from "../Components";
 // import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const Sidebar = () => {
   const [isProjectOpen, setIsProjectOpen] = useState(false);
-  const [isContactOpen,setIsContactOpen]= useState(false)
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   const toggleOpen = () => {
     !isProjectOpen ? setIsProjectOpen(true) : setIsProjectOpen(false);
   };
-  const handleContactClick=()=>{
-    setIsContactOpen(true)
-
-  }
+  const handleContactClick = () => {
+    setIsContactOpen(true);
+  };
 
   const closeProjects = () => {
     setIsProjectOpen(false);
   };
   return (
-    <SideWrap>
+    <SideWrap><Wrap>
       <Title onClick={closeProjects} exact to="/">
         Andrew Paul
       </Title>
@@ -31,7 +31,6 @@ const Sidebar = () => {
         <Span onClick={closeProjects}>C.V.</Span>
       </Link>
       <ProjectsClick onClick={toggleOpen}>Projects</ProjectsClick>
-
       <ProjectWrap isOpen={isProjectOpen}>
         <Link exact to="/arbus">
           <Span>Arbus</Span>
@@ -40,34 +39,24 @@ const Sidebar = () => {
           <Span>Clown Town</Span>
         </Link>
       </ProjectWrap>
-      
-        <ContactClick onClick={handleContactClick}>Contact</ContactClick>
-    <Modal open={isContactOpen}></Modal>
+      <ContactClick onClick={handleContactClick}>Contact</ContactClick>
+      <Modal open={isContactOpen}>
+        <Contact
+          // isContactOpen={isContactOpen}
+          setIsContactOpen={setIsContactOpen}
+        />
+      </Modal>
+      </Wrap>
     </SideWrap>
   );
 };
+
+const Wrap = styled.div`
+display:flex;
+flex-direction:column;
+position:fixed;`
 const ContactClick = styled.span`
-font-size: 15px;
-cursor: pointer;
-&:focus {
-  background-color: none;
-}
-&:hover {
-  color: #666;
-  transition: all 0.3s ease-in-out;
-}
-`;
-const ProjectWrap = styled.div`
-  opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
-  transition: 0.5s ease-in-out;
-  position: absolute;
-  z-index: 15;
-  margin: 99px 0 0 75px;
-  display: flex;
-  flex-direction: column;
-`;
-const ProjectsClick = styled.span`
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
   &:focus {
     background-color: none;
@@ -77,9 +66,31 @@ const ProjectsClick = styled.span`
     transition: all 0.3s ease-in-out;
   }
 `;
-const Span = styled.span``;
+const ProjectWrap = styled.div`
+  opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  z-index: 15;
+  margin: 101px 0 0 75px;
+  display: flex;
+  flex-direction: column;
+  width:100px;
+`;
+const ProjectsClick = styled.span`
+  font-size: 16px;
+  cursor: pointer;
+  &:focus {
+    background-color: none;
+  }
+  &:hover {
+    color: #666;
+    transition: all 0.3s ease-in-out;
+  }
+`;
+const Span = styled.span`
+`;
 const Link = styled(NavLink)`
-  font-size: 15px;
+  font-size: 16px;
   &:focus {
     color: #ff3d3d;
   }

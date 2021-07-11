@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import emailjs from "emailjs-com";
 
-const Contact = ({ className }) => {
+const Contact = ({ className, setIsContactOpen }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -23,44 +23,43 @@ const Contact = ({ className }) => {
       );
   };
   return (
-    <BigWrap>
-      <FormWrap className={className}>
-        <Input
-          className="a"
-          id="Name"
-          placeholder="Name"
-          type="text"
-          name="Name"
-          required="true"
-        />
-        <Input
-          className="b"
-          id="email"
-          placeholder="Email"
-          type="text"
-          name="Email"
-          required="true"
-        />
-        <Input
-          className="c"
-          id="Subject"
-          placeholder="Subject"
-          type="text"
-          name="Subject"
-          required="true"
-        />
+    <FormWrap className={className}>
+      <Input
+        className="a"
+        id="Name"
+        placeholder="Name"
+        type="text"
+        name="Name"
+        required="true"
+      />
+      <Input
+        className="b"
+        id="email"
+        placeholder="Email"
+        type="text"
+        name="Email"
+        required="true"
+      />
+      <Input
+        className="c"
+        id="Subject"
+        placeholder="Subject"
+        type="text"
+        name="Subject"
+        required="true"
+      />
 
-        <TextArea
-          className="d"
-          id="message"
-          placeholder="Message"
-          wrap="hard"
-          type="text"
-          name="message"
-          required="true"
-        />
-      </FormWrap>
-    </BigWrap>
+      <TextArea
+        className="d"
+        id="message"
+        placeholder="Message"
+        wrap="hard"
+        type="text"
+        name="message"
+        required="true"
+      />
+      <button onClick={() => setIsContactOpen(false)} />
+    </FormWrap>
   );
 };
 const TextArea = styled.textarea`
@@ -107,21 +106,4 @@ const FormWrap = styled.form`
   margin: 73px auto;
 `;
 
-const BigWrap = styled.div`
-  width: 100vw;
-  height: 100vh;
-  margin-left: -20vw;
-  padding-left: 20vw;
-  background-color: rgba(0, 0, 0, 0.7);
-  transition: all 1s ease-out;
-  animation: fadein 1s ease-out;
-  @keyframes fadein {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-`;
 export default Contact;

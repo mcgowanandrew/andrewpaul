@@ -84,10 +84,12 @@ const Heading = styled.div`
 const TextWrap = styled.div`
   width: 90%;
   margin-top: 73px;
+  padding-bottom:40px
+  
 `;
 
 const Text = styled.span`
-  font-size: 13px;
+  font-size: 15px;
 `;
 
 const BigWrap = styled.div`

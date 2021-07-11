@@ -20,7 +20,7 @@ const TextWrap = styled.div`
 `;
 
 const Text = styled.span`
-  font-size: 14px;
+  font-size: 15px;
 `;
 
 const BigWrap = styled.div`

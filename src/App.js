@@ -3,14 +3,15 @@ import styled from "styled-components";
 import { Nav } from "./Navigation";
 
 const App = () => {
+
   return (
     <NavWrap>
-      <Nav/>
+      <Nav />
     </NavWrap>
- 
   );
 };
 
 const NavWrap = styled.div`
-display:flex;`
+  display: flex;
+`;
 export default App;

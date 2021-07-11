@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-color: #000;
     color:#fff;
     font-size: 10px;
     font-family: 'DM Sans', sans-serif;
