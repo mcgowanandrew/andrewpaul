@@ -78,8 +78,13 @@ const CV = () => {
     </BigWrap>
   );
 };
+
 const Heading = styled.div`
   font-size: 15px;
+  border-bottom: 1px solid #fff;
+  display:inline-block;
+  padding-bottom: 1px;
+  margin-bottom: 10px;
 `;
 const TextWrap = styled.div`
   width: 90%;
@@ -89,15 +94,15 @@ const TextWrap = styled.div`
 `;
 
 const Text = styled.span`
-  font-size: 15px;
+  font-size: 14px;
 `;
 
 const BigWrap = styled.div`
-  width: 100vw;
-  height: 100vh;
-  margin-left: -20vw;
-  padding-left: 20vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  margin-left: -30vw;
+  padding-left: 30vw;
+  background-color: rgba(0, 0, 0, 0.7);
   transition: all 1s ease-out;
   animation: fadein 1s ease-out;
   @keyframes fadein {

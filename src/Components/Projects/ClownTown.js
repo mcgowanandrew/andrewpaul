@@ -7,8 +7,8 @@ const ClownTown = ()=>{
 const BigWrap = styled.div`
   width: 100vw;
   height: 100vh;
-  margin-left: -20vw;
-  padding-left: 20vw;
+  margin-left: -30vw;
+  padding-left: 30vw;
   background-color: rgba(0, 0, 0, 0.6);
 `;
 

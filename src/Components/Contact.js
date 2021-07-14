@@ -83,7 +83,7 @@ const FormButton = styled.button`
   padding: 5px 10px;
   background-color: #fff;
   color: #000;
-  margin-left: 10px;
+  margin-left: 15px;
   font-weight: bold;
   &:before{
 
