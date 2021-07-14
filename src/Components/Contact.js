@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import emailjs from "emailjs-com";
 
 const Contact = ({ className, setIsContactOpen }) => {
 
-  const [thankYou, setThankYou]=useState(false)
+  // const [thankYou, setThankYou]=useState(false)
 
   const handleClear = () => {
     document
