@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Homepage, About, Arbus, CV, ClownTown } from "../Components";
+import { Homepage, About, Arbus, Cv, ClownTown } from "../Components";
 import GlobalStyles from "../GlobalStyles";
 import Sidebar from "./Sidebar";
 
@@ -17,7 +17,7 @@ const Nav = () => {
           <About />
         </Route>
         <Route exact path="/cv">
-          <CV />
+          <Cv/>
         </Route>
         <Route exact path="/arbus">
           <Arbus />

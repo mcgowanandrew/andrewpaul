@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const CV = () => {
+const Cv = () => {
   return (
     <BigWrap>
       <TextWrap>
@@ -115,4 +115,4 @@ const BigWrap = styled.div`
   }
 `;
 
-export default CV;
+export default Cv;
