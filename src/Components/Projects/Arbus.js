@@ -2,26 +2,22 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import data from "./arbusdata.json";
 import Modal from "../Modal/Modal";
-console.log("data", data);
 
 const Arbus = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [imageOpen, setImageOpen] = useState(false);
 
-  // const openImage = (index)=>{
-  //   setIsOpen(true)
-  // }
   return (
     <BigWrap>
       <Wrap>
         {data.map((arbus, index) => {
           return (
             <>
-              <Img onClick={() => setIsOpen(index)} src={arbus.img} />{" "}
-              <Modal open={isOpen === index}>
+              <Img onClick={() => setImageOpen(index)} src={arbus.img} />{" "}
+              <Modal open={imageOpen === index}>
                 <ImgWrap>
                   <Img src={arbus.img} />
                   <ButWrap>
-                    <Button onClick={()=> setIsOpen(false)}>Close</Button>{" "}
+                    <Button onClick={() => setImageOpen(false)}>Close</Button>{" "}
                   </ButWrap>
                 </ImgWrap>
               </Modal>
@@ -33,16 +29,14 @@ const Arbus = () => {
   );
 };
 
-
 const ButWrap = styled.div`
-display: flex;
+  display: flex;
   justify-content: flex-end;
 `;
 const ImgWrap = styled.div`
   width: 615px;
   display: flex;
   flex-direction: column;
-  
 `;
 
 const Button = styled.button`

@@ -1,12 +1,10 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Homepage, About, CV} from "../Components";
-import { Arbus, ClownTown } from "../Components/Projects";
+import { Homepage, About, Arbus, CV ,ClownTown} from "../Components";
 import GlobalStyles from "../GlobalStyles";
 import Sidebar from "./Sidebar";
 
 const Nav = () => {
-
   return (
     <BrowserRouter>
       <GlobalStyles />
