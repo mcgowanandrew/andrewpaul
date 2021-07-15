@@ -8,9 +8,5 @@
   { "img": "./arbusimages/editsub.png" },
   { "img": "./arbusimages/adminview.png" },
   { "img": "./arbusimages/adminedit.png" },
-  { "img": "./arbusimages/adminadd.png" },
-  { "img": "./arbusimages/mobile1.png" },
-  { "img": "./arbusimages/mobile2.png" },
-  { "img": "./arbusimages/mobile3.png" },
-  { "img": "./arbusimages/mobile4.png" }
+  { "img": "./arbusimages/adminadd.png" }
 ]

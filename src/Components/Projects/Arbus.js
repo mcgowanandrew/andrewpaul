@@ -1,45 +1,90 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import data from "./arbusdata.json";
+import Modal from "../Modal/Modal";
 console.log("data", data);
 
 const Arbus = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // const openImage = (index)=>{
+  //   setIsOpen(true)
+  // }
   return (
     <BigWrap>
       <Wrap>
-        {data.slice(0,1).map((arbus) => {
-          return <Img src={arbus.img} />;
-        })}
-         {data.slice(1,14).map((arbus) => {
-          return <Img src={arbus.img} />;
+        {data.map((arbus, index) => {
+          return (
+            <>
+              <Img onClick={() => setIsOpen(index)} src={arbus.img} />{" "}
+              <Modal open={isOpen === index}>
+                <ImgWrap>
+                  <Img src={arbus.img} />
+                  <ButWrap>
+                    <Button onClick={()=> setIsOpen(false)}>Close</Button>{" "}
+                  </ButWrap>
+                </ImgWrap>
+              </Modal>
+            </>
+          );
         })}
       </Wrap>
     </BigWrap>
   );
 };
+
+
+const ButWrap = styled.div`
+display: flex;
+  justify-content: flex-end;
+`;
+const ImgWrap = styled.div`
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  
+`;
+
+const Button = styled.button`
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  &:before {
+  }
+  &:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+`;
 const Wrap = styled.div`
   margin-top: 90px;
   padding-bottom: 40px;
   width: 630px;
   display: flex;
   flex-wrap: wrap;
-  /* align-content: flex-start; */
 `;
+
 const Img = styled.img`
   margin: 0 15px 15px 0;
+  &:hover {
+    cursor: pointer;
+  }
 
   &:nth-child(odd) {
-    width: 75px;
-    height: 75px;
+    width: 195px;
+    height: 195px;
     overflow: hidden;
     object-fit: cover;
   }
   &:nth-child(even) {
-    width: 75px;
-    height: 75px;
+    width: 195px;
+    height: 195px;
     overflow: hidden;
     object-fit: cover;
-
   }
   &:nth-child(1) {
     width: 615px;
