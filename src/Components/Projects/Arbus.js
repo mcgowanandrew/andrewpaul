@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import data from "./arbusdata.json";
+import data from "./arbusData.json";
 import Modal from "../Modal/Modal";
 
 const Arbus = () => {
