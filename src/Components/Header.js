@@ -1,24 +1,24 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink} from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const Header = () => {
- 
+  let history = useHistory();
   return (
     <HeadWrap>
-      <Title >Andrew Paul</Title>
+      <Title onClick={() => history.push("/")}>Andrew Paul</Title>
       <NavWrap>
-        <Nav link to="/about">
+        <Nav to="/about">
           About
         </Nav>
-        <Nav link to="/cv">
+        <Nav to="/cv">
           C.V.
         </Nav>
-        <Nav link to="/projects">
+        <Nav to="/projects">
           Projects
         </Nav>
-        <Nav link to="/contact">
+        <Nav to="/contact">
           Contact
         </Nav>
       </NavWrap>
