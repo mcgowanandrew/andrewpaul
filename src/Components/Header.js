@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const Header = () => {
-  let history = useHistory();
+ 
   return (
     <HeadWrap>
-      <Title onClick={() => history.push("/")}>Andrew Paul</Title>
+      <Title >Andrew Paul</Title>
       <NavWrap>
         <Nav link to="/about">
           About
