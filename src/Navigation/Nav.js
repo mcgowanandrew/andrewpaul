@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Homepage, About, Arbus, Cv, ClownTown } from "../Components";
+import { Homepage, About, Arbus, Cv, ClownTown, Contact } from "../Components";
 import GlobalStyles from "../GlobalStyles";
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
 
 const Nav = () => {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Switch>
         <Route exact path="/">
           <Homepage />
@@ -24,6 +24,9 @@ const Nav = () => {
         </Route>
         <Route exact path="/clown-town">
           <ClownTown />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
         </Route>
       </Switch>
     </BrowserRouter>

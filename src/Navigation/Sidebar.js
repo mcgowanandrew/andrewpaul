@@ -32,12 +32,12 @@ const Sidebar = () => {
       </Link>
       <ProjectsClick onClick={toggleOpen}>Projects</ProjectsClick>
       <ProjectWrap isOpen={isProjectOpen}>
-        <Link exact to="/arbus">
+        <ProjectLink exact to="/arbus">
           <Span>Arbus</Span>
-        </Link>
-        <Link exact to="/clown-town">
+        </ProjectLink>
+        <ProjectLink exact to="/clown-town">
           <Span>Clown Town</Span>
-        </Link>
+        </ProjectLink>
       </ProjectWrap>
       <ContactClick onClick={handleContactClick}>Contact</ContactClick>
       <Modal open={isContactOpen}>
@@ -71,13 +71,14 @@ const ProjectWrap = styled.div`
   transition: 0.5s ease-in-out;
   position: absolute;
   z-index: 15;
-  margin: 101px 0 0 75px;
+  margin: 127px 0 0 75px;
   display: flex;
   flex-direction: column;
   width:100px;
 `;
 const ProjectsClick = styled.span`
   font-size: 16px;
+  margin-bottom: 15px;
   cursor: pointer;
   &:focus {
     background-color: none;
@@ -91,6 +92,13 @@ const Span = styled.span`
 `;
 const Link = styled(NavLink)`
   font-size: 16px;
+  margin-bottom: 15px;
+  &:focus {
+    color: #ff3d3d;
+  }
+`;
+const ProjectLink = styled(NavLink)`
+  font-size: 14px;
   &:focus {
     color: #ff3d3d;
   }

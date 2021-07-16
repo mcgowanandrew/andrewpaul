@@ -15,7 +15,7 @@ const Arbus = () => {
               <Img onClick={() => setImageOpen(index)} src={arbus.img} />{" "}
               <Modal open={imageOpen === index}>
                 <ImgWrap>
-                  <Img src={arbus.img} />
+                  <Img2 src={arbus.img} />
                   <ButWrap>
                     <Button onClick={() => setImageOpen(false)}>Close</Button>{" "}
                   </ButWrap>
@@ -28,7 +28,9 @@ const Arbus = () => {
     </BigWrap>
   );
 };
-
+const Img2 = styled.img`
+  margin: 0 15px 15px 0;
+  background: #000;`
 const ButWrap = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -48,15 +50,13 @@ const Button = styled.button`
   &:before {
   }
   &:hover {
-    background-color: #000;
     color: #fff;
+    background-color: #000;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
   }
 `;
 const Wrap = styled.div`
-  margin-top: 90px;
-  padding-bottom: 40px;
+  margin: 30px auto;
   width: 630px;
   display: flex;
   flex-wrap: wrap;
@@ -64,8 +64,10 @@ const Wrap = styled.div`
 
 const Img = styled.img`
   margin: 0 15px 15px 0;
+  background: #000;
   &:hover {
     cursor: pointer;
+    filter: brightness(35%);
   }
 
   &:nth-child(odd) {
