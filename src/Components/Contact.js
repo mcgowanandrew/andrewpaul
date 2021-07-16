@@ -9,7 +9,6 @@ const Contact = ({ className}) => {
     document
       .querySelectorAll("input,textarea")
       .forEach((input) => (input.value = ""));
-    // history.go(0);
   };
   const sendEmail = (e) => {
     e.preventDefault();
@@ -67,7 +66,6 @@ const Contact = ({ className}) => {
         name="message"
         required={true}
       />
-      {/* <button onClick={() => setIsContactOpen(false)} /> */}
       <ButtonWrap className="e">
         <FormButton onClick={() => handleClear()}>Reset</FormButton>
         <FormButton type="submit" name="send">Send</FormButton>
@@ -77,9 +75,6 @@ const Contact = ({ className}) => {
   );
 };
 const BigWrap= styled.div`
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
   transition: all 1s ease-out;
   animation: fadein 1s ease-out;
   @keyframes fadein {
@@ -111,7 +106,7 @@ const FormButton = styled.button`
 const ButtonWrap = styled.div`
   display: flex;
   justify-content: flex-end;
-  width: 514px;
+  width: 614px;
 `;
 const TextArea = styled.textarea`
   height: 300px;
@@ -161,7 +156,7 @@ const FormWrap = styled.form`
     "message message message"
     "button button button";
   gap: 15px;
-  width: 500px;
+  width: 600px;
   margin: 30px auto;
 `;
 

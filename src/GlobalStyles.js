@@ -4,12 +4,7 @@ const GlobalStyle = createGlobalStyle`
 body{
     margin:0;
     padding:0;
-    height: 100vh;
-    background-image: url(${img});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+ 
     background-color: #000;
     color:#fff;
     font-size: 10px;

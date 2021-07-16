@@ -12,12 +12,12 @@ const ClownTown = () => {
         {data.map((clown, index) => {
           return (
             <>
-              <Img onClick={() => setImageOpen(index)} src={clown.img} />{" "}
+              <Img key={index}  onClick={() => setImageOpen(index)} src={clown.img} />{" "}
               <Modal open={imageOpen === index}>
                 <ImgWrap>
                   <Img2 src={clown.img} />
                   <ButWrap>
-                    <Button onClick={() => setImageOpen(false)}>Close</Button>{" "}
+                    <Button key={index} onClick={() => setImageOpen(false)}>Close</Button>{" "}
                   </ButWrap>
                 </ImgWrap>
               </Modal>
@@ -71,14 +71,14 @@ const Img = styled.img`
   }
 
   &:nth-child(odd) {
-    width: 195px;
-    height: 195px;
+    width: 142px;
+    height: 142px;
     overflow: hidden;
     object-fit: cover;
   }
   &:nth-child(even) {
-    width: 195px;
-    height: 195px;
+    width: 142px;
+    height: 142px;
     overflow: hidden;
     object-fit: cover;
   }
@@ -88,9 +88,7 @@ const Img = styled.img`
   }
 `;
 const BigWrap = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+
   transition: all 1s ease-out;
   animation: fadein 1s ease-out;
   @keyframes fadein {
