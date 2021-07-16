@@ -2,9 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import emailjs from "emailjs-com";
 
-const Contact = ({ className, setIsContactOpen }) => {
+const Contact = ({ className}) => {
 
-  // const [thankYou, setThankYou]=useState(false)
 
   const handleClear = () => {
     document
@@ -32,7 +31,7 @@ const Contact = ({ className, setIsContactOpen }) => {
         }
       );
   };
-  return (
+  return (<BigWrap className={className}>
     <FormWrap className="contact-form" autocomplete="off" onSubmit={sendEmail}>
       <Input
         className="a"
@@ -70,13 +69,27 @@ const Contact = ({ className, setIsContactOpen }) => {
       />
       {/* <button onClick={() => setIsContactOpen(false)} /> */}
       <ButtonWrap className="e">
-        <FormButton onClick={() => setIsContactOpen(false)}>Close</FormButton>
         <FormButton onClick={() => handleClear()}>Reset</FormButton>
         <FormButton type="submit" name="send">Send</FormButton>
       </ButtonWrap>
     </FormWrap>
+    </BigWrap>
   );
 };
+const BigWrap= styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 1s ease-out;
+  animation: fadein 1s ease-out;
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }`
 
 const FormButton = styled.button`
   border: 2px solid #fff;
@@ -149,7 +162,7 @@ const FormWrap = styled.form`
     "button button button";
   gap: 15px;
   width: 500px;
-  margin: 73px auto;
+  margin: 30px auto;
 `;
 
 export default Contact;

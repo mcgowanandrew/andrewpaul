@@ -29,7 +29,7 @@ const Arbus = () => {
   );
 };
 const Img2 = styled.img`
-  margin: 0 15px 15px 0;
+  margin-bottom:15px;
   background: #000;`
 const ButWrap = styled.div`
   display: flex;
@@ -90,8 +90,6 @@ const Img = styled.img`
 const BigWrap = styled.div`
   width: 100%;
   height: 100%;
-  margin-left: -30vw;
-  padding-left: 30vw;
   background-color: rgba(0, 0, 0, 0.6);
   transition: all 1s ease-out;
   animation: fadein 1s ease-out;

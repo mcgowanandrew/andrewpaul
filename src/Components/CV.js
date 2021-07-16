@@ -87,9 +87,8 @@ const Heading = styled.div`
   margin-bottom: 10px;
 `;
 const TextWrap = styled.div`
-  width: 90%;
-  margin-top: 73px;
-  padding-bottom:40px
+  width: 630px;
+  margin:30px auto;
   
 `;
 
@@ -100,8 +99,6 @@ const Text = styled.span`
 const BigWrap = styled.div`
   width: 100%;
   height: 100%;
-  margin-left: -30vw;
-  padding-left: 30vw;
   background-color: rgba(0, 0, 0, 0.7);
   transition: all 1s ease-out;
   animation: fadein 1s ease-out;

@@ -15,8 +15,8 @@ const About = () => {
   );
 };
 const TextWrap = styled.div`
-  width: 90%;
-  margin-top: 70px;
+  width: 630px;
+  margin:30px auto;
 `;
 
 const Text = styled.span`
@@ -26,8 +26,6 @@ const Text = styled.span`
 const BigWrap = styled.div`
   width: 100vw;
   height: 100vh;
-  margin-left: -30vw;
-  padding-left: 30vw;
   background-color: rgba(0, 0, 0, 0.7);
   transition: all 1s ease-out;
   animation: fadein 1s ease-out;
