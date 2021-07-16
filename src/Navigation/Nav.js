@@ -4,7 +4,7 @@ import {
   Homepage,
   About,
   Arbus,
-  // Cv,
+  Cv,
   ClownTown,
   Contact,
   ProjectPage,
@@ -24,9 +24,9 @@ const Nav = () => {
         <Route exact path="/about">
           <About />
         </Route>
-        {/* <Route exact path="/cv">
+        <Route exact path="/cv">
           <Cv />
-        </Route> */}
+        </Route>
         <Route exact path="/arbus">
           <Arbus />
         </Route>
