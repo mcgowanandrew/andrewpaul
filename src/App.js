@@ -1,23 +1,23 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-// import {
-//   Homepage,
-//   About,
-//   Arbus,
-//   Cv,
-//   ClownTown,
-//   Contact,
-//   ProjectPage,
-//   Header,
-// } from "../Components"
-import Homepage from "./Components/Homepage"
-import About from "./Components/About"
-import Arbus from "./Components/Projects/Arbus"
-import Cv from "./Components/Cv"
-import ClownTown from "./Components/Projects/ClownTown"
-import Contact from "./Components/Contact"
-import ProjectPage from "./Components/ProjectPage"
-import Header from "./Components/Header"
+import {
+  Homepage,
+  About,
+  Arbus,
+  Cv,
+  ClownTown,
+  Contact,
+  ProjectPage,
+  Header,
+} from "./Components"
+// import Homepage from "./Components/Homepage"
+// import About from "./Components/About"
+// import Arbus from "./Components/Projects/Arbus"
+// import Cv from "./Components/Cv"
+// import ClownTown from "./Components/Projects/ClownTown"
+// import Contact from "./Components/Contact"
+// import ProjectPage from "./Components/ProjectPage"
+// import Header from "./Components/Header"
 import GlobalStyles from "./GlobalStyles";
 
 const App = () => {
