@@ -6,21 +6,15 @@ import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 const Header = () => {
   let history = useHistory();
   return (
-    <HeadWrap>
+    <HeadWrap >
       <Title onClick={() => history.push("/")}>Andrew Paul</Title>
       <NavWrap>
         <Nav to="/about">
           About
         </Nav>
-        <Nav to="/cv">
-          C.V.
-        </Nav>
-        <Nav to="/projects">
-          Projects
-        </Nav>
-        <Nav to="/contact">
-          Contact
-        </Nav>
+        <Nav to="/cv">C.V.</Nav>
+        <Nav to="/projects">Projects</Nav>
+        <Nav to="/contact">Contact</Nav>
       </NavWrap>
       <SocialWrap>
         <StyledAiFillInstagram size={25} />
@@ -51,7 +45,9 @@ const SocialWrap = styled.div`
 const Nav = styled(NavLink)`
   font-size: 20px;
   padding: 15px;
-  transition: all 0.3s ease-in-out;
+  &.active {
+    color: #666;
+  }
 `;
 const Title = styled.div`
   font-size: 30px;
@@ -69,7 +65,6 @@ const HeadWrap = styled.div`
   justify-content: space-between;
   width: 100vw;
   position: relative;
-  z-index:10;
-
+  z-index: 10;
 `;
 export default Header;

@@ -13,7 +13,7 @@ const Projects = () => {
         <ImgWrap>
           {arbusData.slice(0, 1).map((arbus,index) => {
             return (
-              <Img key={index} src={arbus.img} />
+              <Img key={index} src={arbus.img} alt="Arbus"/>
             );
           })}{" "}
           <Hover onClick={() => history.push("/arbus")} >
@@ -23,7 +23,7 @@ const Projects = () => {
         <ImgWrap>
           {ctData.slice(0, 1).map((ct,index) => {
             return (
-              <Img key={index} src={ct.img} />
+              <Img key={index} src={ct.img} alt="Clown Town"/>
             );
           })}{" "}
           <Hover onClick={() => history.push("/clown-town")} >

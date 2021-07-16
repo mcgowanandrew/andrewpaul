@@ -12,10 +12,10 @@ const ClownTown = () => {
         {data.map((clown, index) => {
           return (
             <>
-              <Img key={index}  onClick={() => setImageOpen(index)} src={clown.img} />{" "}
+              <Img key={index}  onClick={() => setImageOpen(index)} src={clown.img} alt="Clown Town"/>{" "}
               <Modal open={imageOpen === index}>
                 <ImgWrap>
-                  <Img2 src={clown.img} />
+                  <Img2 src={clown.img} alt="Clown Town"/>
                   <ButWrap>
                     <Button key={index} onClick={() => setImageOpen(false)}>Close</Button>{" "}
                   </ButWrap>

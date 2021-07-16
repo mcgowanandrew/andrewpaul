@@ -12,10 +12,10 @@ const Arbus = () => {
         {data.map((arbus, index) => {
           return (
             <>
-              <Img key={index}  onClick={() => setImageOpen(index)} src={arbus.img} />{" "}
+              <Img key={index}  onClick={() => setImageOpen(index)} src={arbus.img} alt="Arbus Project"/>{" "}
               <Modal open={imageOpen === index}>
                 <ImgWrap>
-                  <Img2 key={index}  src={arbus.img} />
+                  <Img2 key={index}  src={arbus.img} alt="Arbus Project"/>
                   <ButWrap>
                     <Button onClick={() => setImageOpen(false)}>Close</Button>{" "}
                   </ButWrap>
