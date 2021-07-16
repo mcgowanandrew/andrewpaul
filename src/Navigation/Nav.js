@@ -18,7 +18,7 @@ import {
 // import Contact from "../Components/Contact"
 // import ProjectPage from "../Components/ProjectPage"
 // import Header from "../Components/Header"
-// import GlobalStyles from "../GlobalStyles";
+import GlobalStyles from "../GlobalStyles";
 
 const Nav = () => {
   return (
