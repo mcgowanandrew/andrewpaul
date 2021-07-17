@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { NavLink, useHistory } from "react-router-dom";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { Squash as Hamburger } from "hamburger-react";
+import Modal from "./Modal/Modal"
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const hamburgerClick = () => {
+    menuOpen ? setMenuOpen(true) : setMenuOpen(false);
+  };
 
   let history = useHistory();
   return (
@@ -40,7 +46,7 @@ const Header = () => {
         />
       </SocialWrap>
       <BurgWrap>
-        <Hamburger />
+        <Hamburger onClick={hamburgerClick}/>        
       </BurgWrap>
     </HeadWrap>
   );
@@ -56,7 +62,8 @@ const BurgWrap = styled.div`
 
 const NavWrap = styled.div`
   padding: 18px;
-  margin-right: 45px;  @media (max-width: 780px) {
+  margin-right: 45px;
+  @media (max-width: 780px) {
     display: none;
   }
 `;

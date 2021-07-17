@@ -12,10 +12,15 @@ const Arbus = () => {
         {data.map((arbus, index) => {
           return (
             <>
-              <Img key={index}  onClick={() => setImageOpen(index)} src={arbus.img} alt="Arbus Project"/>{" "}
+              <Img
+                key={index}
+                onClick={() => setImageOpen(index)}
+                src={arbus.img}
+                alt="Arbus Project"
+              />{" "}
               <Modal open={imageOpen === index}>
                 <ImgWrap>
-                  <Img2 key={index}  src={arbus.img} alt="Arbus Project"/>
+                  <Img2 key={index} src={arbus.img} alt="Arbus Project" />
                   <ButWrap>
                     <Button onClick={() => setImageOpen(false)}>Close</Button>{" "}
                   </ButWrap>
@@ -29,8 +34,9 @@ const Arbus = () => {
   );
 };
 const Img2 = styled.img`
-  margin-bottom:15px;
-  background: #000;`
+  margin-bottom: 15px;
+  background: #000;
+`;
 const ButWrap = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -65,22 +71,13 @@ const Wrap = styled.div`
 const Img = styled.img`
   margin: 0 15px 15px 0;
   background: #000;
+  width: 195px;
+  height: 195px;
+  overflow: hidden;
+  object-fit: cover;
   &:hover {
     cursor: pointer;
     filter: brightness(35%);
-  }
-
-  &:nth-child(odd) {
-    width: 195px;
-    height: 195px;
-    overflow: hidden;
-    object-fit: cover;
-  }
-  &:nth-child(even) {
-    width: 195px;
-    height: 195px;
-    overflow: hidden;
-    object-fit: cover;
   }
   &:nth-child(1) {
     width: 615px;

@@ -13,6 +13,7 @@ import {
 import GlobalStyles from "./GlobalStyles";
 
 const App = () => {
+
   return (
     <BrowserRouter>
       <GlobalStyles />

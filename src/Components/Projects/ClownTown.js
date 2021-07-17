@@ -65,22 +65,13 @@ const Wrap = styled.div`
 const Img = styled.img`
   margin: 0 15px 15px 0;
   background: #000;
+  width: 142px;
+    height: 142px;
+    overflow: hidden;
+    object-fit: cover;
   &:hover {
     cursor: pointer;
     filter: brightness(35%);
-  }
-
-  &:nth-child(odd) {
-    width: 142px;
-    height: 142px;
-    overflow: hidden;
-    object-fit: cover;
-  }
-  &:nth-child(even) {
-    width: 142px;
-    height: 142px;
-    overflow: hidden;
-    object-fit: cover;
   }
   &:nth-child(1) {
     width: 615px;
