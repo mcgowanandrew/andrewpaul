@@ -3,6 +3,7 @@ import styled from "styled-components";
 import data from "./arbusData.json";
 import Modal from "../Modal/Modal";
 
+
 const Arbus = () => {
   const [imageOpen, setImageOpen] = useState(false);
 
@@ -36,6 +37,9 @@ const Arbus = () => {
 const Img2 = styled.img`
   margin-bottom: 15px;
   background: #000;
+  @media (max-width:619x){
+    width:300px;
+  }
 `;
 const ButWrap = styled.div`
   display: flex;
@@ -45,6 +49,10 @@ const ImgWrap = styled.div`
   width: 615px;
   display: flex;
   flex-direction: column;
+  @media (max-width:619px){
+    width:300px;
+  }
+
 `;
 
 const Button = styled.button`
@@ -66,6 +74,9 @@ const Wrap = styled.div`
   width: 630px;
   display: flex;
   flex-wrap: wrap;
+  @media (max-width:619px){
+    width:300px;
+  }
 `;
 
 const Img = styled.img`
@@ -75,13 +86,21 @@ const Img = styled.img`
   height: 195px;
   overflow: hidden;
   object-fit: cover;
+  @media (max-width:619px){
+  width:135px;
+  height:135px;
+
+  }
   &:hover {
     cursor: pointer;
     filter: brightness(35%);
   }
-  &:nth-child(1) {
+  &:first-child {
     width: 615px;
     height: auto;
+    @media (max-width:500px){
+      width:300px;
+    }
   }
 `;
 const BigWrap = styled.div`

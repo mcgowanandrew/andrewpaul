@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { NavLink, useHistory } from "react-router-dom";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { Squash as Hamburger } from "hamburger-react";
-import Modal from "./Modal/Modal"
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);

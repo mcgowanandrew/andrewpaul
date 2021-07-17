@@ -77,7 +77,7 @@ const ProjectWrap = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
-  @media (max-width:619px){
+  @media (max-width:636px){
     width:300px;
   }
 `;
