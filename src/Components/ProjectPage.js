@@ -47,7 +47,7 @@ const Hover = styled.div`
   place-content: center;
   background: rgba(000, 000, 000, 0.7);
   height: 100%;
-  width: 630px;
+  width: 100%;
   z-index: 10;
   opacity: 0;
   &:hover {
@@ -58,14 +58,14 @@ const Hover = styled.div`
 `;
 const ImgWrap = styled.div`
   position: relative;
- width:630px;
+ width:100%;
  height: auto;
 `;
 
 const Img = styled.img`
   position: relative;
   z-index: 1;
-  width: 630px;
+  width: 100%;
   height: auto;
   &:hover {
     cursor: pointer;
@@ -77,6 +77,9 @@ const ProjectWrap = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
+  @media (max-width:619px){
+    width:300px;
+  }
 `;
 const BigWrap = styled.div`
   transition: all 1s ease-out;

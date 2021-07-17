@@ -8,9 +8,9 @@ const Cv = () => {
         <Text>
           <Heading>Education:</Heading>
           <br />
-          Concordia University, 2021 - Diploma in Full-Stack Web Development
+          2021 - Concordia University, Diploma in Full-Stack Web Development
           <br />
-          Rosemount Technology Centre, 2010 to 2011 - DVS in Digital Layout &
+          2011 - Rosemount Technology Centre, DVS in Digital Layout &
           Printing
           <br />
           <br />
@@ -57,6 +57,10 @@ const Cv = () => {
           <br />
           2014 - Nighted Life 5, Nighted Life
           <br />
+          2013 - Poutine Dreams, P.D.C.
+          <br/>
+          2013 - Nobody Gives A Break (When You’re Down On Your Luck), Exhibition Catalogue
+          <br />
           2013 - Nighted Life Book, Nighted Life
           <br />
           2013 - Doom Life Issue 6, Dark Arts Collective
@@ -80,7 +84,7 @@ const Cv = () => {
 };
 
 const Heading = styled.div`
-  font-size: 15px;
+  font-size: 20px;
   border-bottom: 1px solid #fff;
   display:inline-block;
   padding-bottom: 1px;
@@ -89,11 +93,14 @@ const Heading = styled.div`
 const TextWrap = styled.div`
   width: 630px;
   margin:30px auto;
-  
+  padding: 0 15px;
+  @media (max-width:660px){
+    width: 90%;
+  }
 `;
 
 const Text = styled.span`
-  font-size: 14px;
+  font-size: 16px;
 `;
 
 const BigWrap = styled.div`

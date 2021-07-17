@@ -2,33 +2,80 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink, useHistory } from "react-router-dom";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { Squash as Hamburger } from "hamburger-react";
 
 const Header = () => {
+
   let history = useHistory();
   return (
-    <HeadWrap >
+    <HeadWrap>
       <Title onClick={() => history.push("/")}>Andrew Paul</Title>
       <NavWrap>
-        <Nav to="/about">
-          About
-        </Nav>
+        <Nav to="/about">About</Nav>
         <Nav to="/cv">C.V.</Nav>
         <Nav to="/projects">Projects</Nav>
         <Nav to="/contact">Contact</Nav>
       </NavWrap>
       <SocialWrap>
-        <StyledAiFillInstagram size={25} />
-        <AiFillLinkedin size={25} />
-        <AiFillGithub size={25} />
+        <StyledAiFillInstagram
+          onClick={() =>
+            window.open("https://www.instagram.com/helloandrewpaul", "_blank")
+          }
+          size={25}
+        />
+        <StyledAiFillLinkedin
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/helloandrewpaul/",
+              "_blank"
+            )
+          }
+          size={25}
+        />
+        <StyledAiFillGithub
+          onClick={() =>
+            window.open("https://github.com/helloandrewpaul", "_blank")
+          }
+          size={25}
+        />
       </SocialWrap>
+      <BurgWrap>
+        <Hamburger />
+      </BurgWrap>
     </HeadWrap>
   );
 };
+
+const BurgWrap = styled.div`
+  padding: 0 15px 13px 0;
+  display: none;
+  @media (max-width: 780px) {
+    display: block;
+  }
+`;
+
 const NavWrap = styled.div`
   padding: 18px;
-  margin-right: 45px;
+  margin-right: 45px;  @media (max-width: 780px) {
+    display: none;
+  }
 `;
+
 const StyledAiFillInstagram = styled(AiFillInstagram)`
+  &:hover {
+    color: #666;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+`;
+const StyledAiFillLinkedin = styled(AiFillLinkedin)`
+  &:hover {
+    color: #666;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+`;
+const StyledAiFillGithub = styled(AiFillGithub)`
   &:hover {
     color: #666;
     transition: all 0.3s ease-in-out;
@@ -40,6 +87,9 @@ const SocialWrap = styled.div`
   width: 100px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 780px) {
+    display: none;
+  }
 `;
 
 const Nav = styled(NavLink)`

@@ -17,10 +17,15 @@ const About = () => {
 const TextWrap = styled.div`
   width: 630px;
   margin:30px auto;
+  padding:0 15px;
+  @media (max-width:660px){
+    width: 90%;
+  }
+
 `;
 
 const Text = styled.span`
-  font-size: 15px;
+  font-size: 20px;
 `;
 
 const BigWrap = styled.div`
