@@ -4,13 +4,17 @@ import { NavLink, useHistory } from "react-router-dom";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { Squash as Hamburger } from "hamburger-react";
 
-const Header = ({open, setOpen, hamburgerClick}) => {
+const Header = ({open, setOpen}) => {
 
-  // const hamburgerClick = () => setOpen((open) => !open);
   let history = useHistory();
+
+  const homepageClick=()=>{
+    history.push("/")
+    setOpen(false)
+  }
   return (
     <HeadWrap>
-      <Title onClick={() => history.push("/")}>Andrew Paul</Title>
+      <Title onClick={homepageClick}>Andrew Paul</Title>
       <NavWrap>
         <Nav to="/about">About</Nav>
         <Nav to="/cv">C.V.</Nav>

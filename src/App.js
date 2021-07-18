@@ -16,11 +16,10 @@ import GlobalStyles from "./GlobalStyles";
 const App = () => {
   const [open, setOpen] = useState(false);
 
-  const hamburgerClick = () => setOpen((open) => !open);
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <Header open={open} setOpen={setOpen} hamburgerClick={hamburgerClick}/>
+      <Header open={open} setOpen={setOpen} />
       <Menu open={open} setOpen={setOpen}/>
       <Switch>
         <Route exact path="/">
