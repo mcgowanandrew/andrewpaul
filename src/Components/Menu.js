@@ -81,7 +81,8 @@ margin-left: 10px;
   }
 `;
 
-const SocialWrap = styled.div``;
+const SocialWrap = styled.div`
+margin-top:10px`;
 const Nav = styled(NavLink)`
   font-size: 20px;
   padding: 10px;
