@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { array } from "yargs";
 import background from "../assets/background.json"
 
 const Homepage = () => {
   const backgroundImg = background.filter((obj) => {
     return obj.img;
-  })[Math.floor(Math.random()* array.length)];
+  })[Math.floor(Math.random()* background.length)];
 
   return <Div src={backgroundImg.img}></Div>;
 };
