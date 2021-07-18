@@ -6,10 +6,25 @@ import Modal from "../Modal/Modal";
 const ClownTown = () => {
   const [imageOpen, setImageOpen] = useState(false);
 
+  let ctHeader = data.filter((obj)=>{
+    return obj.img
+  })[0]
+
   return (
     <BigWrap>
       <Wrap>
-        {data.map((clown, index) => {
+        <Img src={ctHeader.img}/>
+        <DetailWrap>
+        <TopWrap>
+<Title>Clown Town</Title>
+<Demo onClick={()=> window.open("https://github.com/helloandrewpaul/group-project-ecomm","_blank")}>GitHub</Demo>
+
+</TopWrap>
+<Description>
+E-commerce group project completed with two other Concordia students. This project was built using JavaScript, React, Node.js, Express and Styled Components. 
+</Description>
+      </DetailWrap>
+        {data.slice(1,5).map((clown, index) => {
           return (
             <>
               <Img key={index}  onClick={() => setImageOpen(index)} src={clown.img} alt="Clown Town"/>{" "}
@@ -48,6 +63,40 @@ const ImgWrap = styled.div`
   }
 
 `;
+const Description = styled.span`
+font-size:15px;
+width:100%;`
+
+
+const TopWrap = styled.div`
+display:flex;
+justify-content:space-between;
+margin-bottom: 15px;
+align-items: flex-end;
+width: 100%;
+`
+const Title=styled.span`
+font-size:22px;
+`
+
+const Demo=styled.span`
+font-size:18px;
+margin-left:10px;
+&:hover{
+  cursor: pointer;
+  color:#666;
+  transition: all 0.3s ease-in-out;
+
+}`
+const DetailWrap = styled.div`
+width:600px;
+margin-bottom:15px;
+padding:10px;
+display:flex;
+flex-direction:column;
+@media (max-width:619px){
+  width:300px;
+}`
 
 const Button = styled.button`
   border: 2px solid #fff;

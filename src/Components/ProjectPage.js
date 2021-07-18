@@ -7,26 +7,26 @@ import ctData from "./Projects/clownTownData.json";
 const Projects = () => {
   let history = useHistory();
 
+  const arbusHeader = arbusData.filter((obj) => {
+    return obj.img;
+  })[0];
+
+  const ctHeader = ctData.filter((obj) => {
+    return obj.img;
+  })[0];
+
   return (
     <BigWrap>
       <ProjectWrap>
         <ImgWrap>
-          {arbusData.slice(0, 1).map((arbus,index) => {
-            return (
-              <Img key={index} src={arbus.img} alt="Arbus"/>
-            );
-          })}{" "}
-          <Hover onClick={() => history.push("/arbus")} >
+         <Img src={arbusHeader.img} alt="Arbus"/>
+          <Hover onClick={() => history.push("/arbus")}>
             <Title> Arbus</Title>
           </Hover>
         </ImgWrap>
         <ImgWrap>
-          {ctData.slice(0, 1).map((ct,index) => {
-            return (
-              <Img key={index} src={ct.img} alt="Clown Town"/>
-            );
-          })}{" "}
-          <Hover onClick={() => history.push("/clown-town")} >
+        <Img src={ctHeader.img} alt="Clown Town" />;
+          <Hover onClick={() => history.push("/clown-town")}>
             <Title>Clown Town</Title>
           </Hover>
         </ImgWrap>
@@ -35,9 +35,10 @@ const Projects = () => {
   );
 };
 const Title = styled.div`
-font-size: 24px;
-font-weight: 500;
-color:#fff;`
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+`;
 
 const Hover = styled.div`
   top: 0;
@@ -58,8 +59,8 @@ const Hover = styled.div`
 `;
 const ImgWrap = styled.div`
   position: relative;
- width:100%;
- height: auto;
+  width: 100%;
+  height: auto;
 `;
 
 const Img = styled.img`
@@ -72,13 +73,13 @@ const Img = styled.img`
   }
 `;
 const ProjectWrap = styled.div`
- margin:30px auto;
+  margin: 30px auto;
   width: 630px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
-  @media (max-width:636px){
-    width:300px;
+  @media (max-width: 636px) {
+    width: 300px;
   }
 `;
 const BigWrap = styled.div`

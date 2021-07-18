@@ -1,20 +1,20 @@
 import React from "react";
 import img from "../assets/bg.jpg";
-
+// import arbusData from "./Projects/arbusData.json";
 import styled from "styled-components";
 
 const Homepage = () => {
-  return <Div></Div>;
+  // const arbusHeader = arbusData.filter((obj) => {
+  //   return obj.img;
+  // })[Math.floor(Math.random() * arbusData.length)];
+
+  return <Div src={img}></Div>;
 };
-const Div = styled.div`
+const Div = styled.img`
   position: fixed;
-top:0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(${img});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;
 export default Homepage;

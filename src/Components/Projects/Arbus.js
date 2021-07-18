@@ -7,10 +7,31 @@ import Modal from "../Modal/Modal";
 const Arbus = () => {
   const [imageOpen, setImageOpen] = useState(false);
 
+  let headerImg = data.filter((obj)=>{
+return obj.img
+  })[0]
+
+  console.log("test",headerImg)
+
   return (
     <BigWrap>
       <Wrap>
-        {data.map((arbus, index) => {
+      <Img  src={headerImg.img}/>
+      <DetailWrap>
+        <TopWrap>
+<Title>Arbus</Title>
+<DemoWrap>
+<Demo onClick={()=> window.open("https://www.youtube.com/watch?v=HQO0AGLM_bk","_blank")}>Demo</Demo>
+<Demo onClick={()=> window.open("https://github.com/helloandrewpaul/arbus", "_blank")}>GitHub</Demo>
+</DemoWrap>
+</TopWrap>
+<Description>
+A web App for Photobook Collectors. It's a user submitted resource where anyone can access detailed information on Photobooks.
+This project was completed as final project for Concordia's Web Development Bootcamp.
+I built this project using React, Node.js, Express, MongoDB and Styled-Components.
+</Description>
+      </DetailWrap>
+        {data.slice(1,10).map((arbus, index) => {
           return (
             <>
               <Img
@@ -34,6 +55,46 @@ const Arbus = () => {
     </BigWrap>
   );
 };
+
+const Description = styled.span`
+font-size:15px;
+width:100%;`
+
+const DemoWrap=styled.div`
+display:flex;
+justify-content:flex-end;
+width:100%;`
+
+const TopWrap = styled.div`
+display:flex;
+justify-content:space-between;
+margin-bottom: 15px;
+align-items: flex-end;
+width: 100%;
+`
+const Title=styled.span`
+font-size:22px;
+`
+
+const Demo=styled.span`
+font-size:18px;
+margin-left:10px;
+&:hover{
+  cursor: pointer;
+  color:#666;
+  transition: all 0.3s ease-in-out;
+
+}`
+const DetailWrap = styled.div`
+width:600px;
+margin-bottom:15px;
+padding:10px;
+display:flex;
+flex-direction:column;
+@media (max-width:619px){
+  width:300px;
+}`
+
 const Img2 = styled.img`
   margin-bottom: 15px;
   background: #000;
