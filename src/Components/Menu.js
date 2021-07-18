@@ -1,8 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { useViewport } from "./Hooks";
 
 const Menu = ({ open, setOpen }) => {
+const {width}= useViewport()
+let breakpoint = 781
+
+if (width>= breakpoint){
+    setOpen(false)
+  }
 
     const closeClick = ()=>{
         setOpen(false)
@@ -35,13 +42,11 @@ const Div = styled.div`
   position: fixed;
   z-index: 3;
   margin-top: -70px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
   opacity: ${({ open }) => (open ? "1" : "0")};
   right:${({ open }) => (open ? "0" : "-100%")};
   top:${({ open }) => (open ? "0" : "-100%")};
-  @media (min-width: 781px) {
-    display: none;
-  }
+
 `;
 
 export default Menu;

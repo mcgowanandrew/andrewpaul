@@ -41,7 +41,7 @@ const Header = ({open, setOpen, hamburgerClick}) => {
         />
       </SocialWrap>
       <BurgWrap>
-        <Hamburger toggled={open} toggle={setOpen}/>
+        <Hamburger toggled={open} toggle={setOpen} duration={0.8}/>
         
      
       </BurgWrap>
