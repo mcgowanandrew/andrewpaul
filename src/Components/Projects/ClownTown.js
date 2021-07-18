@@ -76,8 +76,8 @@ const Wrap = styled.div`
 const Img = styled.img`
   margin: 0 15px 15px 0;
   background: #000;
-  width: 195px;
-  height: 195px;
+  width: 142px;
+  height: 142px;
   overflow: hidden;
   object-fit: cover;
   @media (max-width:619px){
