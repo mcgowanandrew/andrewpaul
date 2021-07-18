@@ -1,14 +1,14 @@
 import React from "react";
-import img from "../assets/bg.jpg";
-// import arbusData from "./Projects/arbusData.json";
 import styled from "styled-components";
+import { array } from "yargs";
+import background from "../assets/background.json"
 
 const Homepage = () => {
-  // const arbusHeader = arbusData.filter((obj) => {
-  //   return obj.img;
-  // })[Math.floor(Math.random() * arbusData.length)];
+  const backgroundImg = background.filter((obj) => {
+    return obj.img;
+  })[Math.floor(Math.random()* array.length)];
 
-  return <Div src={img}></Div>;
+  return <Div src={backgroundImg.img}></Div>;
 };
 const Div = styled.img`
   position: fixed;
