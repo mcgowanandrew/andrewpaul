@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import {
   Homepage,
@@ -9,15 +9,19 @@ import {
   Contact,
   ProjectPage,
   Header,
+  Menu
 } from "./Components"
 import GlobalStyles from "./GlobalStyles";
 
 const App = () => {
+  const [open, setOpen] = useState(false);
 
+  const hamburgerClick = () => setOpen((open) => !open);
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <Header />
+      <Header open={open} setOpen={setOpen} hamburgerClick={hamburgerClick}/>
+      <Menu open={open} setOpen={setOpen}/>
       <Switch>
         <Route exact path="/">
           <Homepage />

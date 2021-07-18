@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 const About = () => {
+
+
+
   return (
     <BigWrap>
       <TextWrap>
-        <Text>
+        <Text >
           👋 I'm an ex-Printer turned Full-Stack Web Developer. I am currently
           working with HTML, CSS, JavaScript, React.js, Node.js, Express and
           MongoDB. Currently learning Sass and Figma. Outside of Web Development
@@ -16,12 +19,11 @@ const About = () => {
 };
 const TextWrap = styled.div`
   width: 630px;
-  margin:30px auto;
-  padding:0 15px;
-  @media (max-width:660px){
+  margin: 30px auto;
+  padding: 0 15px;
+  @media (max-width: 660px) {
     width: 90%;
   }
-
 `;
 
 const Text = styled.span`

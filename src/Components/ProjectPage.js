@@ -48,7 +48,7 @@ const Hover = styled.div`
   background: rgba(000, 000, 000, 0.7);
   height: 100%;
   width: 100%;
-  z-index: 10;
+  z-index: 2;
   opacity: 0;
   &:hover {
     transition: all 0.5s ease-in-out;

@@ -1,16 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { NavLink, useHistory } from "react-router-dom";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { Squash as Hamburger } from "hamburger-react";
 
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+const Header = ({open, setOpen, hamburgerClick}) => {
 
-  const hamburgerClick = () => {
-    menuOpen ? setMenuOpen(true) : setMenuOpen(false);
-  };
-
+  // const hamburgerClick = () => setOpen((open) => !open);
   let history = useHistory();
   return (
     <HeadWrap>
@@ -45,9 +41,13 @@ const Header = () => {
         />
       </SocialWrap>
       <BurgWrap>
-        <Hamburger onClick={hamburgerClick}/>        
+        <Hamburger toggled={open} toggle={setOpen}/>
+        
+     
       </BurgWrap>
+     
     </HeadWrap>
+  
   );
 };
 
