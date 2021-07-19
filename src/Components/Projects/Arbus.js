@@ -11,7 +11,6 @@ const Arbus = () => {
 return obj.img
   })[0]
 
-  console.log("test",headerImg)
 
   return (
     <BigWrap>
