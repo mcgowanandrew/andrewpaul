@@ -8,6 +8,9 @@ const Header = ({open, setOpen}) => {
 
   let history = useHistory();
 
+const preventDefault=(e)=>{
+  e.prevent.default()
+}
   const homepageClick=()=>{
     history.push("/")
     setOpen(false)
@@ -45,7 +48,7 @@ const Header = ({open, setOpen}) => {
         />
       </SocialWrap>
       <BurgWrap>
-        <Hamburger toggled={open} toggle={setOpen} duration={0.8}/>
+        <Hamburger onClick={(e)=> preventDefault(e)} toggled={open} toggle={setOpen} duration={0.8}/>
         
      
       </BurgWrap>

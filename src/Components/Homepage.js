@@ -1,19 +1,22 @@
 import React from "react";
+import img from "../assets/bg.jpg";
+import arbusData from "./Projects/arbusData.json";
+
 import styled from "styled-components";
-import background from "../assets/background.json"
 
 const Homepage = () => {
-  const backgroundImg = background.filter((obj) => {
-    return obj.img;
-  })[Math.floor(Math.random()* background.length)];
-
-  return <Div src={backgroundImg.img}></Div>;
+  
+  return <Div></Div>;
 };
-const Div = styled.img`
+const Div = styled.div`
   position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+top:0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(${img});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 `;
 export default Homepage;
