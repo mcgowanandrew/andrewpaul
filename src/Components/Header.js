@@ -8,9 +8,7 @@ const Header = ({open, setOpen}) => {
 
   let history = useHistory();
 
-const preventDefault=(e)=>{
-  e.prevent.default()
-}
+
   const homepageClick=()=>{
     history.push("/")
     setOpen(false)
@@ -48,7 +46,7 @@ const preventDefault=(e)=>{
         />
       </SocialWrap>
       <BurgWrap>
-        <Hamburger onClick={(e)=> preventDefault(e)} toggled={open} toggle={setOpen} duration={0.8}/>
+        <Hamburger  toggled={open} toggle={setOpen} duration={0.8}/>
         
      
       </BurgWrap>
@@ -119,7 +117,11 @@ const Title = styled.div`
     cursor: pointer;
     color: #666;
     transition: all 0.3s ease-in-out;
+    @media (max-width: 780px) {
+    color: #fff;
   }
+  }
+
 `;
 
 const HeadWrap = styled.div`
