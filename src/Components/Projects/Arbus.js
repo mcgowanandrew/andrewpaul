@@ -99,7 +99,8 @@ const Img2 = styled.img`
   margin-bottom: 15px;
   background: #000;
   @media (max-width:619x){
-    width:300px;
+    width:250px;
+    height:auto;
   }
 `;
 const ButWrap = styled.div`
@@ -159,6 +160,9 @@ const Img = styled.img`
   &:first-child {
     width: 615px;
     height: auto;
+    filter: brightness(100%);
+    cursor: default;
+
     @media (max-width:500px){
       width:300px;
     }

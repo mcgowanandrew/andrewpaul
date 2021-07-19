@@ -1,7 +1,5 @@
 import React from "react";
 import img from "../assets/bg.jpg";
-import arbusData from "./Projects/arbusData.json";
-
 import styled from "styled-components";
 
 const Homepage = () => {

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-const ImageModalOne = ({ open, children }) => {
+const Modal = ({ open, children }) => {
     
   if (!open) {
     return null;
@@ -54,7 +54,8 @@ const ModalDiv = styled.div`
   }
   @media (max-width: 619px) {
     width: 300px;
+    height: auto;
   }
 `;
 
-export default ImageModalOne;
+export default Modal;
