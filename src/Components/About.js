@@ -8,9 +8,14 @@ const About = () => {
     <BigWrap>
       <TextWrap>
         <Text >
-          👋 I'm an ex-Printer turned Full-Stack Web Developer. I am currently
+          👋 I'm an ex-Printer turned Full-Stack Web Developer. <br/>
+          <br/>I am currently
           working with HTML, CSS, JavaScript, React.js, Node.js, Express and
-          MongoDB. Currently learning Sass and Figma. Outside of Web Development
+          MongoDB. 
+          <br/>
+          <br/>Currently learning Sass and Figma. 
+          <br/>
+          <br/>Outside of Web Development
           I'm a Photographer and a Bookbinder.
         </Text>
       </TextWrap>
