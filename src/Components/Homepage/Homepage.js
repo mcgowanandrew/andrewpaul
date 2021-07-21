@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from "react";
 import styled from "styled-components";
 import data from "./background.json"
+
 const Homepage = () => {
   const [homeBg, setHomeBg] = useState([]);
   
@@ -14,6 +15,7 @@ const Homepage = () => {
   return (<><Img src={homeBg.img}/></>
     )
 };
+
 const Img = styled.img`
   position: fixed;
   top: 0;
@@ -21,6 +23,6 @@ const Img = styled.img`
   height: 100vh;
   position: center;
   object-fit: cover;
-
 `;
+
 export default Homepage;
