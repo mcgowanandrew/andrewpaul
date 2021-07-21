@@ -1,4 +1,4 @@
-export { default as Homepage } from "./Homepage";
+export { default as Homepage } from "./Homepage/Homepage";
 export { default as About } from "./About";
 export { default as Cv } from "./Cv";
 export { default as Contact } from "./Contact";
