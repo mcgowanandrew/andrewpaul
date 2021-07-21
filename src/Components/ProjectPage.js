@@ -37,7 +37,6 @@ const Projects = () => {
 const Title = styled.div`
   font-size: 24px;
   font-weight: 500;
-  color: #fff;
 `;
 
 const Hover = styled.div`

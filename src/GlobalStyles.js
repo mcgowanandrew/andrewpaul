@@ -4,14 +4,14 @@ body{
     margin:0;
     padding:0;
  
-    background-color: #000;
-    color:#fff;
+    background-color: #030205;
+    color:#faf7ff;
     font-size: 10px;
     font-family: 'DM Sans', sans-serif;
 }
 a{
     text-decoration:none;
-    color:#fff;
+    color:#faf7ff;
     margin-bottom: 3px;
 }
 a:hover{

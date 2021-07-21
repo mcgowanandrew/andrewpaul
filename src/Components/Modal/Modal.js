@@ -21,7 +21,7 @@ const Overlay = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0,1);
+  background-color: rgba(3, 2, 5,1);
   z-index: 1000;
   transition: all 0.5s ease-out;
   animation: fadein 0.5s ease-out;

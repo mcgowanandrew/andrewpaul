@@ -46,7 +46,7 @@ const Header = ({open, setOpen}) => {
         />
       </SocialWrap>
       <BurgWrap>
-        <Hamburger  toggled={open} toggle={setOpen} duration={0.8}/>
+        <Hamburger  color="color:#faf7ff" toggled={open} toggle={setOpen} duration={0.8}/>
         
      
       </BurgWrap>
@@ -73,6 +73,7 @@ const NavWrap = styled.div`
 `;
 
 const StyledAiFillInstagram = styled(AiFillInstagram)`
+color:#faf7ff;
   &:hover {
     color: #666;
     transition: all 0.3s ease-in-out;
@@ -80,6 +81,7 @@ const StyledAiFillInstagram = styled(AiFillInstagram)`
   }
 `;
 const StyledAiFillLinkedin = styled(AiFillLinkedin)`
+color:#faf7ff;
   &:hover {
     color: #666;
     transition: all 0.3s ease-in-out;
@@ -87,6 +89,7 @@ const StyledAiFillLinkedin = styled(AiFillLinkedin)`
   }
 `;
 const StyledAiFillGithub = styled(AiFillGithub)`
+color:#faf7ff;
   &:hover {
     color: #666;
     transition: all 0.3s ease-in-out;

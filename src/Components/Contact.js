@@ -119,17 +119,17 @@ height:100vh;
 `;
 
 const FormButton = styled.button`
-  border: 2px solid #fff;
+  border: 2px solid #faf7ff;
   padding: 5px 10px;
-  background-color: #fff;
-  color: #000;
+  background-color: #faf7ff;
+  color: #030205;
   margin-left: 15px;
   font-weight: bold;
   &:before {
   }
   &:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #030205;
+    color:#faf7ff;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
@@ -147,9 +147,9 @@ const TextArea = styled.textarea`
   height: 300px;
   max-width: 100%;
   min-width: 100%;
-  border: 2px solid #fff;
-  background-color: #000;
-  color: #fff;
+  border: 2px solid #faf7ff;
+  background-color: #030205;
+  color: #faf7ff;
   padding: 5px;
   :focus {
     outline: none;
@@ -157,9 +157,9 @@ const TextArea = styled.textarea`
 `;
 const Input = styled.input`
   width: 100%;
-  border: 2px solid #fff;
-  background-color: #000;
-  color: #fff;
+  border: 2px solid #faf7ff;
+  background-color: #030205;
+  color: #faf7ff;
   padding: 5px;
   :focus {
     outline: none;
