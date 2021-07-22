@@ -46,7 +46,7 @@ const Header = ({open, setOpen}) => {
         />
       </SocialWrap>
       <BurgWrap>
-        <Hamburger  color="color:#faf7ff" toggled={open} toggle={setOpen} duration={0.8}/>
+        <Hamburger  color="#faf7ff" toggled={open} toggle={setOpen} duration={0.8}/>
         
      
       </BurgWrap>
