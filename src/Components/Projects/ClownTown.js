@@ -30,7 +30,9 @@ const ClownTown = () => {
           </TopWrap>
           <Description>
             E-commerce group project completed with two other Concordia
-            students. This project was built using JavaScript, React, Node.js,
+            students. 
+            <br/>
+            <br/>This project was built using JavaScript, React, Node.js,
             Express and Styled Components.
           </Description>
         </DetailWrap>

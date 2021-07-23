@@ -42,9 +42,14 @@ const Arbus = () => {
           </TopWrap>
           <Description>
             A web App for Photobook Collectors. It's a user submitted resource
-            where anyone can access detailed information on Photobooks. This
-            project was completed as final project for Concordia's Web
-            Development Bootcamp. I built this project using React, Node.js,
+            where anyone can access detailed information on Photobooks. In addition there is a password protected Admin area. As Admin you can review, edit, approve or reject user submissions.
+            <br/> 
+            <br/>
+            This project was completed as final project for Concordia's Web
+            Development Bootcamp. 
+            <br/>
+            <br/>
+            I built this project using React, Node.js,
             Express, MongoDB and Styled-Components.
           </Description>
         </DetailWrap>
