@@ -1,13 +1,12 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import emailjs from "emailjs-com";
 
 const Contact = ({ className }) => {
-
-  const [success,setSuccess]=useState(false)
+  const [success, setSuccess] = useState(true);
 
   const handleClear = () => {
-    setSuccess(false)
+    setSuccess(false);
     document
       .querySelectorAll("input,textarea")
       .forEach((input) => (input.value = ""));
@@ -26,7 +25,7 @@ const Contact = ({ className }) => {
         (result) => {
           console.log("sucress", result.text);
           e.target.reset();
-          setSuccess(true)
+          setSuccess(true);
         },
         (error) => {
           console.log("error", error.text);
@@ -34,78 +33,86 @@ const Contact = ({ className }) => {
       );
   };
   return (
-    <BigWrap  className={className}>
+    <BigWrap className={className}>
       <Wrap>
-      <FormWrap
-        className="contact-form"
-        autocomplete="off"
-        onSubmit={sendEmail}
-      >
-        <Input
-          className="a"
-          id="Name"
-          placeholder="Name"
-          type="text"
-          name="user_name"
-          required={true}
-        />
-        <Input
-          className="b"
-          id="email"
-          placeholder="Email"
-          type="text"
-          name="user_email"
-          required={true}
-        />
-        <Input
-          className="c"
-          id="Subject"
-          placeholder="Subject"
-          type="text"
-          name="subject"
-          required={true}
-        />
+        <FormWrap
+          className="contact-form"
+          autocomplete="off"
+          onSubmit={sendEmail}
+        >
+          <Input
+            className="a"
+            id="Name"
+            placeholder="Name"
+            type="text"
+            name="user_name"
+            required={true}
+          />
+          <Input
+            className="b"
+            id="email"
+            placeholder="Email"
+            type="text"
+            name="user_email"
+            required={true}
+          />
+          <Input
+            className="c"
+            id="Subject"
+            placeholder="Subject"
+            type="text"
+            name="subject"
+            required={true}
+          />
 
-        <TextArea
-          className="d"
-          id="message"
-          placeholder="Message"
-          wrap="hard"
-          type="text"
-          name="message"
-          required={true}
-        />
-        <ButtonWrap className="e">
-          <Success open={success}>Thank you for contacting me, I will get back to you quickly.</Success>
-          <SmallWrap>
-          <FormButton onClick={() => handleClear()}>Reset</FormButton>
-          <FormButton type="submit" name="send">
-            Send
-          </FormButton>
-          </SmallWrap>
-        </ButtonWrap>
-      </FormWrap>
+          <TextArea
+            className="d"
+            id="message"
+            placeholder="Message"
+            wrap="hard"
+            type="text"
+            name="message"
+            required={true}
+          />
+          <ButtonWrap className="e">
+            <Success open={success}>
+              Thank you for contacting me, I will get back to you quickly.
+            </Success>
+            <SmallWrap>
+              <FormButton onClick={() => handleClear()}>Reset</FormButton>
+              <FormButton type="submit" name="send">
+                Send
+              </FormButton>
+            </SmallWrap>
+          </ButtonWrap>
+        </FormWrap>
       </Wrap>
     </BigWrap>
   );
 };
-const SmallWrap=styled.div`
-`
+const SmallWrap = styled.div`
+display: flex;
+justify-content: flex-end;
+  @media (max-width: 619px) {
+    width: 300px;
+    margin-top: 15px;
+  }
+`;
 const Success = styled.span`
-font-size:14px;
-opacity: ${({ open }) => (open ? "1" : "0")};
-transition: all 0.6s ease-in-out;
-
-`
+  font-size: 14px;
+  opacity: ${({ open }) => (open ? "1" : "0")};
+  transition: all 0.6s ease-in-out;
+`;
 const Wrap = styled.div`
-width:600px;
-margin: 0 auto;
-@media (max-width:619px){
-  width: 300px;
-}`
+  width: 600px;
+  margin: 0 auto;
+  @media (max-width: 619px) {
+    width: 300px;
+  }
+`;
 const BigWrap = styled.div`
-width:100vw;
-height:100vh;
+  width: 100vw;
+  height: 100vh;
   transition: all 1s ease-out;
   animation: fadein 1s ease-out;
   @keyframes fadein {
@@ -129,7 +136,7 @@ const FormButton = styled.button`
   }
   &:hover {
     background-color: #030205;
-    color:#faf7ff;
+    color: #faf7ff;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
@@ -141,6 +148,7 @@ const ButtonWrap = styled.div`
   width: 614px;
   @media (max-width: 619px) {
     width: 314px;
+    flex-direction: column;
   }
 `;
 const TextArea = styled.textarea`
