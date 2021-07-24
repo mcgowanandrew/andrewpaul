@@ -154,6 +154,7 @@ const Button = styled.button`
   &:before {
   }
   &:hover {
+    transition: all 0.3s ease-in-out;
     color: #faf7ff;
     background-color: #030205;
     cursor: pointer;
