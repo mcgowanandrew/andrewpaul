@@ -95,13 +95,16 @@ display: flex;
 justify-content: flex-end;
   @media (max-width: 619px) {
     width: 300px;
-    margin-top: 15px;
   }
 `;
 const Success = styled.span`
   font-size: 14px;
-  opacity: ${({ open }) => (open ? "1" : "0")};
+  display: ${({ open }) => (open ? "inline" : "none")};
   transition: all 0.6s ease-in-out;
+  @media (max-width: 619px) {
+    margin-bottom: ${({ open }) => (open ? "15px" : "0")};
+
+  }
 `;
 const Wrap = styled.div`
   width: 600px;
