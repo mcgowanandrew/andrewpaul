@@ -3,7 +3,7 @@ import styled from "styled-components";
 import emailjs from "emailjs-com";
 
 const Contact = ({ className }) => {
-  const [success, setSuccess] = useState(true);
+  const [success, setSuccess] = useState(false);
 
   const handleClear = () => {
     setSuccess(false);
