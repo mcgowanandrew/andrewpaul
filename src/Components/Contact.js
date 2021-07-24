@@ -91,19 +91,21 @@ const Contact = ({ className }) => {
   );
 };
 const SmallWrap = styled.div`
-display: flex;
-justify-content: flex-end;
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
   @media (max-width: 619px) {
     width: 300px;
+    width: 100%;
   }
 `;
 const Success = styled.span`
+  width: 75%;
   font-size: 14px;
   display: ${({ open }) => (open ? "inline" : "none")};
   transition: all 0.6s ease-in-out;
   @media (max-width: 619px) {
     margin-bottom: ${({ open }) => (open ? "15px" : "0")};
-
   }
 `;
 const Wrap = styled.div`
@@ -147,7 +149,7 @@ const FormButton = styled.button`
 const ButtonWrap = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
   width: 614px;
   @media (max-width: 619px) {
     width: 314px;
