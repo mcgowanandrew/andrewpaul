@@ -53,7 +53,7 @@ const Arbus = () => {
             Express, MongoDB and Styled-Components.
           </Description>
         </DetailWrap>
-        {data.slice(1, 10).map((arbus, index) => {
+        {data.slice(1).map((arbus, index) => {
           return (
             <>
               <Img
