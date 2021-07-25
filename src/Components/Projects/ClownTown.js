@@ -35,10 +35,10 @@ const ClownTown = () => {
             Express and Styled Components.
           </Description>
         </DetailWrap>
-        {data.slice(1).map((image, index) => {
+        {data.slice(1).map((project, index) => {
           return (
             <>
-          <Project image={image} index={index} />
+          <Project project={project} index={index} />
             </>
           );
         })}

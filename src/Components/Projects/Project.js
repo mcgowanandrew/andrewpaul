@@ -2,18 +2,18 @@ import React, {useState} from "react"
 import styled from "styled-components"
 import Modal from "../Modal/Modal"
 
-const Project = ({image,index})=>{
+const Project = ({project,index})=>{
   const [imageOpen, setImageOpen] = useState(false);
 
     return( <> <Img
         key={index}
         onClick={() => setImageOpen(index)}
-        src={image.img}
+        src={project.img}
         alt="Project Image"
       />{" "}
       <Modal open={imageOpen === index}>
         <ImgWrap>
-          <Img2 key={index} src={image.img} alt="Project image" />
+          <Img2 key={index} src={project.img} alt="Project image" />
           <ButWrap>
             <Button onClick={() => setImageOpen(false)}>Close</Button>{" "}
           </ButWrap>
