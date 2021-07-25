@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import data from "./clownTownData.json";
-import Modal from "../Modal/Modal";
+import Project from "./Project"
 
 const ClownTown = () => {
-  const [imageOpen, setImageOpen] = useState(false);
 
   let ctHeader = data.filter((obj) => {
     return obj.img;
@@ -36,25 +35,10 @@ const ClownTown = () => {
             Express and Styled Components.
           </Description>
         </DetailWrap>
-        {data.slice(1).map((clown, index) => {
+        {data.slice(1).map((image, index) => {
           return (
             <>
-              <Img
-                key={index}
-                onClick={() => setImageOpen(index)}
-                src={clown.img}
-                alt="Clown Town"
-              />{" "}
-              <Modal open={imageOpen === index}>
-                <ImgWrap>
-                  <Img2 src={clown.img} alt="Clown Town" />
-                  <ButWrap>
-                    <Button key={index} onClick={() => setImageOpen(false)}>
-                      Close
-                    </Button>{" "}
-                  </ButWrap>
-                </ImgWrap>
-              </Modal>
+          <Project image={image} index={index} />
             </>
           );
         })}
@@ -63,26 +47,6 @@ const ClownTown = () => {
   );
 };
 
-const Img2 = styled.img`
-  margin-bottom: 15px;
-  @media (max-width: 619x) {
-    width: 300px;
-  }
-`;
-
-const ButWrap = styled.div`
-  display: flex;
-  justify-content: flex-end;
-`;
-
-const ImgWrap = styled.div`
-  width: 615px;
-  display: flex;
-  flex-direction: column;
-  @media (max-width: 619px) {
-    width: 300px;
-  }
-`;
 
 const Description = styled.span`
   font-size: 15px;
@@ -118,22 +82,6 @@ const DetailWrap = styled.div`
   flex-direction: column;
   @media (max-width: 619px) {
     width: 300px;
-  }
-`;
-
-const Button = styled.button`
-  border: 2px solid #faf7ff;
-  padding: 5px 10px;
-  background-color: #faf7ff;
-  color: #030205;
-  font-weight: bold;
-  &:before {
-  }
-  &:hover {
-    transition: all 0.3s ease-in-out;
-    color: #faf7ff;
-    background-color: #030205;
-    cursor: pointer;
   }
 `;
 

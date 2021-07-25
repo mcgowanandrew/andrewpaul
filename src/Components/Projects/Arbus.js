@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import data from "./arbusData.json";
-import Modal from "../Modal/Modal";
+import Project from "./Project"
 
 const Arbus = () => {
-  const [imageOpen, setImageOpen] = useState(false);
 
   let headerImg = data.filter((obj) => {
     return obj.img;
@@ -53,23 +52,10 @@ const Arbus = () => {
             Express, MongoDB and Styled-Components.
           </Description>
         </DetailWrap>
-        {data.slice(1).map((arbus, index) => {
+        {data.slice(1).map((image, index) => {
           return (
             <>
-              <Img
-                key={index}
-                onClick={() => setImageOpen(index)}
-                src={arbus.img}
-                alt="Arbus Project"
-              />{" "}
-              <Modal open={imageOpen === index}>
-                <ImgWrap>
-                  <Img2 key={index} src={arbus.img} alt="Arbus Project" />
-                  <ButWrap>
-                    <Button onClick={() => setImageOpen(false)}>Close</Button>{" "}
-                  </ButWrap>
-                </ImgWrap>
-              </Modal>
+          <Project image={image} index={index} />
             </>
           );
         })}
@@ -119,45 +105,6 @@ const DetailWrap = styled.div`
   flex-direction: column;
   @media (max-width: 619px) {
     width: 300px;
-  }
-`;
-
-const Img2 = styled.img`
-  margin-bottom: 15px;
-  @media (max-width: 619x) {
-    width: 250px;
-    height: auto;
-  }
-`;
-
-const ButWrap = styled.div`
-  display: flex;
-  justify-content: flex-end;
-`;
-
-const ImgWrap = styled.div`
-background-color: #030205;
-  width: 615px;
-  display: flex;
-  flex-direction: column;
-  @media (max-width: 619px) {
-    width: 300px;
-  }
-`;
-
-const Button = styled.button`
-  border: 2px solid #faf7ff;
-  padding: 5px 10px;
-  background-color: #faf7ff;
-  color: #030205;
-  font-weight: bold;
-  &:before {
-  }
-  &:hover {
-    transition: all 0.3s ease-in-out;
-    color: #faf7ff;
-    background-color: #030205;
-    cursor: pointer;
   }
 `;
 
