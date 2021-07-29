@@ -13,12 +13,29 @@ a{
     text-decoration:none;
     color:#faf7ff;
     margin-bottom: 3px;
+    position: relative;
 }
 a:hover{
     color:#666;
     transition: all 0.3s ease-in-out;
 
 }
+a::after{
+    content:"";
+    position:absolute;
+    left:15%;
+    bottom:0;
+    width:70%;
+    height:2px;
+    background: #666;
+    transform: scaleX(0);
+    transform-origin:bottom;
+    transition: all 0.4s ease-in-out;
+
+  }
+  a:hover::after{
+      transform: scaleX(1);
+  }
 
     
     
