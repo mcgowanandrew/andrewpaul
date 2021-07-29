@@ -86,7 +86,8 @@ margin-top:10px;`;
 
 const Nav = styled(NavLink)`
   font-size: 20px;
-  padding: 10px;
+  padding-bottom: 5px;
+  margin: 10px;
 `;
 const Content = styled.div`
   margin-top: 170px;
