@@ -108,7 +108,8 @@ const SocialWrap = styled.div`
 
 const Nav = styled(NavLink)`
   font-size: 20px;
-  padding: 15px;
+  padding-bottom: 5px;
+  margin: 0 15px;
   &.active {
     color: #666;
   }
