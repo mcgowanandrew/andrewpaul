@@ -6,6 +6,7 @@ import Images from './Images';
 const Project = () => {
   let { title } = useParams();
   const [project, setProject] = useState([]);
+  //
 
   useEffect(() => {
     fetch(`/project/${title}`, { method: 'GET' })
