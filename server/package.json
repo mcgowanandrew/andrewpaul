@@ -2,7 +2,8 @@
   "name": "server",
   "version": "1.0.0",
   "engines": {
-    "node": "16.8.0"
+    "node": "16.x",
+    "npm":"7.14.7"
   },
   "description": "",
   "main": "index.js",

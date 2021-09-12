@@ -50,7 +50,7 @@ const Project = () => {
           </Description>
         </DetailWrap>
         {p.images &&
-          p.images.map((img, index) => <Images img={img} index={index} />)}
+          p.images.map((img, index) => <Images img={img} key={index} index={index} />)}
       </Wrap>
     </BigWrap>
   );

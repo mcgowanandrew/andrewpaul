@@ -28,12 +28,15 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: false }));
 app.use('/', express.static(__dirname + '/'));
 
-app.get('/', (req, res)=> {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
-app.get('/projects', getAllProjects);
-app.get('/project/:title',getProjectByTitle  )
+// app.get('/', (req, res)=> {
+//   res.sendFile(path.join(__dirname, 'build', 'index.html'));
+// });
+// app.get('/', (req, res) => { res.send('Hello from Express!')
 
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
-});
+app.get('/projects', getAllProjects);
+app.get('/project/:title', getProjectByTitle)
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(process.env.PORT || PORT);
