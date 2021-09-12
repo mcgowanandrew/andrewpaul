@@ -1,0 +1,30 @@
+[{"id": "01",
+    "title": "Arbus",
+    "description": "A web App for Photobook Collectors. It's a user submitted resource where anyone can access detailed information on Photobooks. Users can add detailed information and upload up to 4 images. In addition there is a password protected Admin area. As Admin you can review, edit, approve or reject user submissions. The Admin can also add a new book and edit existing books including, information and images.",
+    "extra":"This project was completed as final project for Concordia's Web Development Bootcamp.",
+    "tech":"I built this project using: React, Node.js, Express, MongoDB and Styled-Components.",
+    "demo": "https://www.youtube.com/watch?v=HQO0AGLM_bk",
+    "github":"https://github.com/helloandrewpaul/arbus",
+    "headerImg": "../arbusimages/arbus.png",
+    "images":[  { "img": "../arbusimages/details01.png" },
+        { "img": "../arbusimages/details02.png" },
+        { "img": "../arbusimages/search.png" },
+        { "img": "../arbusimages/submit.png" },
+        { "img": "../arbusimages/viewsubs.png" },
+        { "img": "../arbusimages/editsub.png" },
+        { "img": "../arbusimages/adminview.png" },
+        { "img": "../arbusimages/adminedit.png" },
+        { "img": "../arbusimages/adminadd.png" }
+
+    ]
+},{"id":"02",
+    "title":"Clown Town",
+    "description":"E-commerce group project completed with two other Concordia students.",
+    "tech":"This project was built using: JavaScript, React, Node.js, Express and Styled Components.",
+    "github":"https://github.com/helloandrewpaul/group-project-ecomm",
+    "headerImg":"../clowntownimages/001.png",
+    "images":[  { "img": "../clowntownimages/002.png" },
+        { "img": "../clowntownimages/003.png" },
+        { "img": "../clowntownimages/004.png" },
+        { "img": "../clowntownimages/005.png" }]
+}]
