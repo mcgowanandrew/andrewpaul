@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Cv = () => {
+  
   return (
     <BigWrap>
       <TextWrap>
@@ -10,7 +11,7 @@ const Cv = () => {
           <br />
           2021 - Concordia University, Diploma in Full-Stack Web Development
           <br />
-          2011 - Rosemount Technology Centre, DVS in Digital Layout & Printing
+          2011 - Rosemount Technology Centre, DVS in Digital Layout {'&'} Printing
           <br />
           <br />
           <Heading>Group Exhibitions:</Heading>
@@ -20,13 +21,13 @@ const Cv = () => {
           2018 - Chania International Photo Festival, Center of the
           Mediterranean Architecture, Chania, Greece
           <br />
-          2018 - Black & White, Blank Wall Gallery, Athens, Greece
+          2018 - Black {'&'} White, Blank Wall Gallery, Athens, Greece
           <br />
           2017 - Home, Float Magazine (Online)
           <br />
           2016 - Hit The Road, Art_Inkubator, Lodz, Poland
           <br />
-          2013 - Nighted Life, Book & Job Gallery, San Francisco, CA
+          2013 - Nighted Life, Book {'&'} Job Gallery, San Francisco, CA
           <br />
           2013 - Nobody Gives A Break (When You’re Down On Your Luck), Galerie
           Nowhere, Montreal, QC

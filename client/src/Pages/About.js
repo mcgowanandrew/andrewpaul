@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+
 const About = () => {
+
   return (
     <BigWrap>
       <TextWrap>
@@ -10,7 +12,7 @@ const About = () => {
           Node.js, Express and MongoDB.
           <br />
           <br />
-          Currently learning Sass and Figma.
+          Currently learning Gatsby {'&'} Sass.
           <br />
           <br />
           Outside of Web Development I'm a Photographer and a Bookbinder.
@@ -19,6 +21,7 @@ const About = () => {
     </BigWrap>
   );
 };
+
 const TextWrap = styled.div`
   width: 630px;
   margin: 30px auto;
