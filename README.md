@@ -1,1 +1,1 @@
-#Personal portfolio built with: React, Nodejs, Express & Styled Components
+Personal portfolio built with: React, Nodejs, Express & Styled Components
