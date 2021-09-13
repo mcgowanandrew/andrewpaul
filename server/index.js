@@ -3,6 +3,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
+// const path = require('path');
 
 const PORT = 4000;
 
@@ -28,9 +29,9 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: false }));
 app.use('/', express.static(__dirname + '/'));
 
-// app.get('/', (req, res)=> {
-//   res.sendFile(path.join(__dirname, 'build', 'index.html'));
-// });
+app.get('/', (req, res)=> {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 // app.get('/', (req, res) => { res.send('Hello from Express!')
 
 app.get('/projects', getAllProjects);
