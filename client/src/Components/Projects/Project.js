@@ -111,29 +111,9 @@ const Wrap = styled.div`
 `;
 
 const Img = styled.img`
-  margin: 0 15px 15px 0;
-  width: 195px;
-  height: 195px;
-  overflow: hidden;
-  object-fit: cover;
-  @media (max-width: 619px) {
-    width: 135px;
-    height: 135px;
-  }
-  &:hover {
-    cursor: pointer;
-    filter: brightness(35%);
-  }
-  &:first-child {
-    width: 615px;
-    height: auto;
-    filter: brightness(100%);
-    cursor: default;
-    margin-bottom: 15px;
-    @media (max-width: 500px) {
-      width: 300px;
-    }
-  }
+width:100%;
+height: auto;
+margin-right:15px;
 `;
 
 const BigWrap = styled.div`

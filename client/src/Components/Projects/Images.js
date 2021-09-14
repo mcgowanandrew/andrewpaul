@@ -48,16 +48,7 @@ const Img = styled.img`
     filter: brightness(35%);
     transform: scale(1.02);
   }
-  &:first-child {
-    width: 615px;
-    height: auto;
-    filter: brightness(100%);
-    transform: scale(1);
-    cursor: default;
-    @media (max-width: 500px) {
-      width: 300px;
-    }
-  }
+
 `;
 const ButWrap = styled.div`
   display: flex;
