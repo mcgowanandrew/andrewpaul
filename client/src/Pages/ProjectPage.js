@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import AllProjects from '../Components/Projects/AllProjects';
-import Loading from '../Components/Spinners/Loading';
 
 const Projects = () => {
   const [allProjects, setAllProjects] = useState([]);
-  const [loadingStatus, setLoadingStatus] = useState('');
 
   useEffect(() => {
     fetch('https://andrew-paul.herokuapp.com/projects')
@@ -21,15 +19,11 @@ const Projects = () => {
 
   return (
     <BigWrap>
-      {loadingStatus === 'loading' ? (
-        <Loading />
-      ) : (
         <ProjectWrap>
           {allProjects.map((project, index) => (
             <AllProjects project={project} index={index} key={project.id} />
           ))}
         </ProjectWrap>
-      )}
     </BigWrap>
   );
 };

@@ -1,11 +1,12 @@
-import React, { useState }from "react";
+import React from "react";
 import styled from "styled-components";
 import BeatLoader from "react-spinners/BeatLoader";
 
 
 const Loading = () => {
-    const [color,setColor]=useState('ffffff')
-  return (
+const color = 'ffffff'
+
+    return (
     <>
       <LoaderWrapper>
               <BeatLoader size={35} color={color}/>
