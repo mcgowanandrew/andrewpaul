@@ -21,7 +21,7 @@ const Projects = () => {
     <BigWrap>
       <ProjectWrap>
         {allProjects.map((project, index) => (
-          <AllProjects project={project} index={index} />
+          <AllProjects project={project} index={index} key={project.id} />
         ))}
       </ProjectWrap>
     </BigWrap>
