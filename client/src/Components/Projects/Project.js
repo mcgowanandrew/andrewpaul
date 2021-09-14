@@ -129,6 +129,7 @@ const Img = styled.img`
     height: auto;
     filter: brightness(100%);
     cursor: default;
+    margin-bottom: 15px;
     @media (max-width: 500px) {
       width: 300px;
     }
