@@ -40,7 +40,7 @@ const ProjectWrap = styled.div`
 `;
 const BigWrap = styled.div`
   transition: all 1s ease-out;
-  animation: fadein 1s ease-out;
+  animation: fadein 0.5s ease-out;
   @keyframes fadein {
     0% {
       opacity: 0;

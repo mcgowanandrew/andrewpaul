@@ -5,16 +5,19 @@ import data from './background.json';
 const Homepage = () => {
   const [homeBg, setHomeBg] = useState([]);
 
-  useEffect(() => {
-    const background = data.filter((obj) => obj.img)[
-      Math.floor(Math.random() * data.length)
-    ];
-    setHomeBg(background);
-  }, []);
+  // useEffect(() => {
+  //   const background = data.filter((obj) => obj.img)[
+  //     Math.floor(Math.random() * data.length)
+  //   ];
+  //   setHomeBg(background);
+  // }, []);
+  const background = data.filter((obj) => obj.img)[
+    Math.floor(Math.random() * data.length)
+  ];
 
   return (
     <>
-      <Img src={homeBg.img} />
+      <Img src={background.img} />
     </>
   );
 };
