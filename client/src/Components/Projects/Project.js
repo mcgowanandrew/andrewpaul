@@ -6,7 +6,6 @@ import Images from './Images';
 const Project = () => {
   let { title } = useParams();
   const [project, setProject] = useState([]);
-  //
 
   useEffect(() => {
     fetch(`https://andrew-paul.herokuapp.com/project/${title}`, { method: 'GET' })
