@@ -6,7 +6,7 @@ const Projects = () => {
   const [allProjects, setAllProjects] = useState([]);
 
   useEffect(() => {
-    fetch('/projects', { method: 'GET' })
+    fetch('https://andrew-paul.herokuapp.com/projects', { method: 'GET' })
       .then((res) => res.json())
       .then((data) => {
         const array = Object.values(data)[1];

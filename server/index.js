@@ -2,11 +2,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
-// const path = require('path');
+const path = require('path');
 
 const PORT = 4000;
 
-const { getAllProjects, getProjectByTitle   } = require('./handlers');
+const { getAllProjects, getProjectByTitle } = require('./handlers');
 
 const app = express();
 
@@ -28,15 +28,15 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: false }));
 app.use('/', express.static(__dirname + '/'));
 
-app.get('/', (req, res)=> {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 // app.get('/', (req, res) => { res.send('Hello from Express!')
 
 app.get('/projects', getAllProjects);
-app.get('/project/:title', getProjectByTitle)
+app.get('/project/:title', getProjectByTitle);
 app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+  res.send('Hello World!');
+});
 
 app.listen(process.env.PORT || PORT);

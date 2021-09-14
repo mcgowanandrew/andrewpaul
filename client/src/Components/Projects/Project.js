@@ -9,7 +9,7 @@ const Project = () => {
   //
 
   useEffect(() => {
-    fetch(`/project/${title}`, { method: 'GET' })
+    fetch(`https://andrew-paul.herokuapp.com/project/${title}`, { method: 'GET' })
       .then((res) => res.json())
       .then((data) => {
         const array = Object.values(data)[1];
