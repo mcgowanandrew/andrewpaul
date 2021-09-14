@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Modal from '../Modal/Modal';
+
 const Images = ({ img, index }) => {
   const [imageOpen, setImageOpen] = useState(false);
 
@@ -87,4 +88,5 @@ const Button = styled.button`
     cursor: pointer;
   }
 `;
+
 export default Images;
