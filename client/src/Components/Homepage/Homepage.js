@@ -14,7 +14,7 @@ const Homepage = () => {
  
   return (
     <>
-      <Img src={background.img} />
+      <Img src={homeBg.img} />
     </>
   );
 };
