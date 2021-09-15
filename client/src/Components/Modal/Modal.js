@@ -20,8 +20,7 @@ const Overlay = styled.div`
   bottom: 0;
   left: 0;
   display: grid;
-  justify-content: center;
-  align-content: center;
+  place-items: center;
   background-color: rgba(3, 2, 5, 0.9);
   z-index: 1000;
   transition: all 0.5s ease-out;
@@ -37,7 +36,7 @@ const Overlay = styled.div`
 `;
 
 const ModalDiv = styled.div`
-padding:30px;
+  padding: 30px;
   z-index: 1000;
   max-width: 650px;
   transition: all 0.5s ease-out;
@@ -50,7 +49,6 @@ padding:30px;
       opacity: 1;
     }
   }
-  
 `;
 
 export default Modal;
