@@ -91,8 +91,8 @@ const Demo = styled.a`
 
 const DetailWrap = styled.div`
   width: 600px;
-  margin-bottom: 15px;
-  padding: 10px;
+  margin: 15px 0;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   @media (max-width: 619px) {
@@ -104,6 +104,7 @@ const Wrap = styled.div`
   margin: 30px auto;
   width: 630px;
   display: flex;
+  overflow: hidden;
   flex-wrap: wrap;
   @media (max-width: 619px) {
     width: 300px;
@@ -111,9 +112,9 @@ const Wrap = styled.div`
 `;
 
 const Img = styled.img`
-width:100%;
+width:615px;
 height: auto;
-margin-right:15px;
+margin:0 auto;
 `;
 
 const BigWrap = styled.div`

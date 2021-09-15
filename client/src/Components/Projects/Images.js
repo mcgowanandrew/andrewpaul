@@ -8,12 +8,12 @@ const Images = ({ img, index }) => {
   return (
     <>
       {' '}
-      <Img
-        key={index}
-        onClick={() => setImageOpen(index)}
-        src={img.img}
-        alt='Project Image'
-      />{' '}
+        <Img
+          key={index}
+          onClick={() => setImageOpen(index)}
+          src={img.img}
+          alt='Project Image'
+        />{' '}
       <Modal open={imageOpen === index}>
         <ImgWrap>
           <Img2 key={index} src={img.img} alt='Project image' />
@@ -25,6 +25,9 @@ const Images = ({ img, index }) => {
     </>
   );
 };
+
+
+
 const Img2 = styled.img`
   margin-bottom: 15px;
   @media (max-width: 619x) {
@@ -33,7 +36,7 @@ const Img2 = styled.img`
   }
 `;
 const Img = styled.img`
-  margin: 0 15px 15px 0;
+  margin: 8px auto;
   width: 195px;
   height: 195px;
   overflow: hidden;
@@ -48,7 +51,6 @@ const Img = styled.img`
     filter: brightness(35%);
     transform: scale(1.02);
   }
-
 `;
 const ButWrap = styled.div`
   display: flex;
@@ -79,5 +81,7 @@ const Button = styled.button`
     cursor: pointer;
   }
 `;
+
+
 
 export default Images;
