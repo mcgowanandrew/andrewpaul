@@ -91,7 +91,7 @@ const Contact = ({ className }) => {
   );
 };
 const SmallWrap = styled.div`
-  width: 100%;
+  width: 630px;
   display: flex;
   justify-content: flex-end;
   @media (max-width: 619px) {
@@ -159,6 +159,7 @@ const TextArea = styled.textarea`
   height: 300px;
   max-width: 100%;
   min-width: 100%;
+  resize: none;
   border: 2px solid #faf7ff;
   background-color: #030205;
   color: #faf7ff;

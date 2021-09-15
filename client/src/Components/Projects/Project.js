@@ -53,7 +53,7 @@ const Project = () => {
         <ImagesWrap>
           {p.images &&
             p.images.map((img, index) => (
-              <Images img={img} key={index}  index={index} />
+              <Images img={img} key={index} index={index} />
             ))}
         </ImagesWrap>
       </Wrap>
@@ -64,7 +64,7 @@ const Project = () => {
 const Description = styled.span`
   font-size: 15px;
   width: 100%;
-  height:auto;
+  height: auto;
 `;
 
 const DemoWrap = styled.div`
@@ -89,11 +89,6 @@ const Title = styled.span`
 const Demo = styled.a`
   font-size: 18px;
   margin-left: 10px;
-  &:hover {
-    cursor: pointer;
-    color: #666;
-    transition: all 0.3s ease-in-out;
-  }
 `;
 
 const DetailWrap = styled.div`
@@ -116,7 +111,6 @@ const Wrap = styled.div`
 const Img = styled.img`
   width: 100%;
   height: auto;
-  margin: 0 auto;
 `;
 
 const BigWrap = styled.div`
@@ -138,15 +132,10 @@ const ImagesWrap = styled.div`
   max-width: 630px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap:22px;
+  gap: 22px;
   @media (max-width: 780px) {
-    grid-template-columns:1fr;
-  
+    grid-template-columns: 1fr;
   }
-
- 
-
-
 `;
 
 export default Project;
