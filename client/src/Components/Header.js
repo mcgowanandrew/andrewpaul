@@ -100,7 +100,7 @@ const SocialWrap = styled.div`
   width: 100px;
   display: flex;
   justify-content: space-between;
-  @media (max-width: 780px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
@@ -138,7 +138,7 @@ const Title = styled.div`
     cursor: pointer;
     color: #666;
     transition: all 0.3s ease-in-out;
-    @media (max-width: 780px) {
+    @media (max-width: 768px) {
       color: #fff;
     }
   }
