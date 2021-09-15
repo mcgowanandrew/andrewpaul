@@ -58,7 +58,7 @@ const Header = ({ open, setOpen }) => {
 const BurgWrap = styled.div`
   padding: 0 15px 13px 0;
   display: none;
-  @media (max-width: 780px) {
+  @media (max-width: 768px) {
     display: block;
   }
 `;
@@ -66,7 +66,7 @@ const BurgWrap = styled.div`
 const NavWrap = styled.div`
   padding: 18px;
   margin-right: 45px;
-  @media (max-width: 780px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
