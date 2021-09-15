@@ -6,7 +6,7 @@ import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 
 const Menu = ({ open, setOpen }) => {
   const { width } = useViewport();
-  let breakpoint = 768;
+  let breakpoint = 780;
 
   if (width >= breakpoint) {
     setOpen(false);

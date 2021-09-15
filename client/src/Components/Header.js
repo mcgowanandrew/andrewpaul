@@ -58,7 +58,7 @@ const Header = ({ open, setOpen }) => {
 const BurgWrap = styled.div`
   padding: 0 15px 13px 0;
   display: none;
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     display: block;
   }
 `;
@@ -66,7 +66,7 @@ const BurgWrap = styled.div`
 const NavWrap = styled.div`
   padding: 18px;
   margin-right: 45px;
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     display: none;
   }
 `;
@@ -100,7 +100,7 @@ const SocialWrap = styled.div`
   width: 100px;
   display: flex;
   justify-content: space-between;
-  @media (max-width: 768px) {
+  @media (max-width: 780px) {
     display: none;
   }
 `;
@@ -138,7 +138,7 @@ const Title = styled.div`
     cursor: pointer;
     color: #666;
     transition: all 0.3s ease-in-out;
-    @media (max-width: 768px) {
+    @media (max-width: 780px) {
       color: #fff;
     }
   }
