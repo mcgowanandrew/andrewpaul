@@ -61,12 +61,18 @@ const BurgWrap = styled.div`
   @media (max-width: 780px) {
     display: block;
   }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    display: block;
+  }
 `;
 
 const NavWrap = styled.div`
   padding: 18px;
   margin-right: 45px;
   @media (max-width: 780px) {
+    display: none;
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     display: none;
   }
 `;
@@ -103,6 +109,9 @@ const SocialWrap = styled.div`
   @media (max-width: 780px) {
     display: none;
   }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    display: none;
+  }
 `;
 
 const Nav = styled(NavLink)`
@@ -112,24 +121,22 @@ const Nav = styled(NavLink)`
   &.active {
     color: #666;
   }
-  ::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:0;
-    width:100%;
-    height:2px;
+  ::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
     background: #666;
     transform: scaleX(0);
-    transform-origin:right;
+    transform-origin: right;
     transition: transform 0.3s ease-in;
-
   }
-  :hover::after{
-      transform: scaleX(1);
-      transform-origin:left;
+  :hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
   }
-
 `;
 const Title = styled.div`
   font-size: 30px;
@@ -139,6 +146,9 @@ const Title = styled.div`
     color: #666;
     transition: all 0.3s ease-in-out;
     @media (max-width: 780px) {
+      color: #fff;
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
       color: #fff;
     }
   }
