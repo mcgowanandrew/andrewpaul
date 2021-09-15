@@ -8,12 +8,12 @@ const Images = ({ img, index }) => {
   return (
     <>
       {' '}
-        <Img
-          key={index}
-          onClick={() => setImageOpen(index)}
-          src={img.img}
-          alt='Project Image'
-        />{' '}
+      <Img
+        key={index}
+        onClick={() => setImageOpen(index)}
+        src={img.img}
+        alt='Project Image'
+      />{' '}
       <Modal open={imageOpen === index}>
         <ImgWrap>
           <Img2 key={index} src={img.img} alt='Project image' />
@@ -26,27 +26,19 @@ const Images = ({ img, index }) => {
   );
 };
 
-
-
 const Img2 = styled.img`
-  margin-bottom: 15px;
-  @media (max-width: 619x) {
-    width: 250px;
-    height: auto;
-  }
+  max-width: 100%;
+  margin: 15px;
 `;
 const Img = styled.img`
-  /* margin: 8px auto; */
   width: 195px;
   height: 195px;
   overflow: hidden;
   object-fit: cover;
   @media (max-width: 780px) {
-    width:100%;
+    width: 100%;
     height: auto;
-  
   }
-  
   &:hover {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -57,13 +49,13 @@ const Img = styled.img`
 const ButWrap = styled.div`
   display: flex;
   justify-content: flex-end;
+  margin: 0 15px 15px;
 `;
 const ImgWrap = styled.div`
   background-color: #030205;
-  width: 615px;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
-
 `;
 
 const Button = styled.button`
@@ -81,7 +73,5 @@ const Button = styled.button`
     cursor: pointer;
   }
 `;
-
-
 
 export default Images;

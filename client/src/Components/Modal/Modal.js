@@ -19,6 +19,9 @@ const Overlay = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
+  display: grid;
+  justify-content: center;
+  align-content: center;
   background-color: rgba(3, 2, 5, 0.9);
   z-index: 1000;
   transition: all 0.5s ease-out;
@@ -34,12 +37,9 @@ const Overlay = styled.div`
 `;
 
 const ModalDiv = styled.div`
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+padding:30px;
   z-index: 1000;
-  width: 600px;
+  max-width: 650px;
   transition: all 0.5s ease-out;
   animation: fadein 0.5s ease-out;
   @keyframes fadein {
@@ -50,10 +50,7 @@ const ModalDiv = styled.div`
       opacity: 1;
     }
   }
-  @media (max-width: 619px) {
-    width: 300px;
-    height: auto;
-  }
+  
 `;
 
 export default Modal;
