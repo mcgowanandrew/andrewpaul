@@ -89,6 +89,24 @@ const Nav = styled(NavLink)`
   font-size: 20px;
   padding-bottom: 5px;
   margin: 10px;
+  ::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:2px;
+    background: #666;
+    transform: scaleX(0);
+    transform-origin:right;
+    transition: transform 0.3s ease-in;
+
+  }
+  :hover::after{
+      transform: scaleX(1);
+      transform-origin:left;
+  }
+
 `;
 const Content = styled.div`
   margin-top: 170px;

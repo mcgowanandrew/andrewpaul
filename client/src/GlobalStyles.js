@@ -20,23 +20,6 @@ a:hover{
     transition: all 0.3s ease-in-out;
 
 }
-a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:0;
-    width:100%;
-    height:2px;
-    background: #666;
-    transform: scaleX(0);
-    transform-origin:right;
-    transition: transform 0.3s ease-in;
-
-  }
-  a:hover::after{
-      transform: scaleX(1);
-      transform-origin:left;
-  }
 
     
     
