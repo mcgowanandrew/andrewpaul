@@ -19,25 +19,14 @@ const Projects = () => {
 
   return (
     <BigWrap>
-        <ProjectWrap>
           {allProjects.map((project, index) => (
             <AllProjects project={project} index={index} key={project.id} />
           ))}
-        </ProjectWrap>
     </BigWrap>
   );
 };
 
-const ProjectWrap = styled.div`
-  margin: 30px auto;
-  width: 630px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-  @media (max-width: 636px) {
-    width: 300px;
-  }
-`;
+
 const BigWrap = styled.div`
   transition: all 1s ease-out;
   animation: fadein 1s ease-out;

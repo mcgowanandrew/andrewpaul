@@ -55,21 +55,20 @@ const ImgWrap = styled.div`
 const Img = styled.img`
   position: relative;
   z-index: 1;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   &:hover {
     cursor: pointer;
   }
 `;
 const ProjectWrap = styled.div`
-  margin: 30px auto;
-  width: 630px;
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 630px;
+  display: flex;
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
-  @media (max-width: 636px) {
-    width: 300px;
-  }
 `;
 const BigWrap = styled.div`
   transition: all 1s ease-out;
