@@ -64,6 +64,7 @@ const Project = () => {
 const Description = styled.span`
   font-size: 15px;
   width: 100%;
+  height:auto;
 `;
 
 const DemoWrap = styled.div`
