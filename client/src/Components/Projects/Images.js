@@ -36,15 +36,17 @@ const Img2 = styled.img`
   }
 `;
 const Img = styled.img`
-  margin: 8px auto;
+  /* margin: 8px auto; */
   width: 195px;
   height: 195px;
   overflow: hidden;
   object-fit: cover;
-  @media (max-width: 619px) {
-    width: 135px;
-    height: 135px;
+  @media (max-width: 780px) {
+    width:100%;
+    height: auto;
+  
   }
+  
   &:hover {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -61,9 +63,7 @@ const ImgWrap = styled.div`
   width: 615px;
   display: flex;
   flex-direction: column;
-  @media (max-width: 619px) {
-    width: 300px;
-  }
+
 `;
 
 const Button = styled.button`

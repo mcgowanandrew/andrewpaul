@@ -8,7 +8,9 @@ const Project = () => {
   const [project, setProject] = useState([]);
 
   useEffect(() => {
-    fetch(`https://andrew-paul.herokuapp.com/project/${title}`, { method: 'GET' })
+    fetch(`https://andrew-paul.herokuapp.com/project/${title}`, {
+      method: 'GET',
+    })
       .then((res) => res.json())
       .then((data) => {
         const array = Object.values(data)[1];
@@ -48,8 +50,12 @@ const Project = () => {
             {p.tech}
           </Description>
         </DetailWrap>
-        {p.images &&
-          p.images.map((img, index) => <Images img={img} key={index} index={index} />)}
+        <ImagesWrap>
+          {p.images &&
+            p.images.map((img, index) => (
+              <Images img={img} key={index} index={index} />
+            ))}
+        </ImagesWrap>
       </Wrap>
     </BigWrap>
   );
@@ -95,26 +101,21 @@ const DetailWrap = styled.div`
   padding: 15px;
   display: flex;
   flex-direction: column;
-  @media (max-width: 619px) {
-    width: 300px;
-  }
 `;
 
 const Wrap = styled.div`
-  margin: 30px auto;
-  width: 630px;
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 630px;
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
-  @media (max-width: 619px) {
-    width: 300px;
-  }
 `;
 
 const Img = styled.img`
-width:615px;
-height: auto;
-margin:0 auto;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 `;
 
 const BigWrap = styled.div`
@@ -130,6 +131,21 @@ const BigWrap = styled.div`
       opacity: 1;
     }
   }
+`;
+
+const ImagesWrap = styled.div`
+  max-width: 630px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:22px;
+  @media (max-width: 780px) {
+    grid-template-columns:1fr;
+  
+  }
+
+ 
+
+
 `;
 
 export default Project;
