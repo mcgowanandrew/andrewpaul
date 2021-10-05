@@ -4,7 +4,6 @@ const cors = require('cors');
 
 const { getAllProjects, getProjectByTitle } = require('./handlers');
 
-
 app.use(express.json());
 app.use(cors());
 app.use(express.static('public'));
