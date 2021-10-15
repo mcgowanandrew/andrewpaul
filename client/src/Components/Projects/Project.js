@@ -18,26 +18,29 @@ const Project = () => {
       })
       .catch((error) => {
         console.log('Error:', error);
+        //create an error page
       });
   }, [title]);
 
   let p = project;
 
+
+
   return (
     <BigWrap>
       <Wrap>
-        <Img src={p.headerImg} />
+        <Img src={p.headerImg} alt={p.title} />
         <DetailWrap>
           <TopWrap>
             <Title>{p.title}</Title>
             <DemoWrap>
               {p.demo && (
-                <Demo href={p.demo} target='_blank'>
+                <Demo href={p.demo} target='_blank'rel='noopener noreferrer'>
                   Demo
                 </Demo>
               )}
               {p.github && (
-                <Demo href={p.github} target='_blank'>
+                <Demo href={p.github} target='_blank' rel='noopener noreferrer'>
                   GitHub
                 </Demo>
               )}
@@ -53,7 +56,13 @@ const Project = () => {
         <ImagesWrap>
           {p.images &&
             p.images.map((img, index) => (
-              <Images img={img} key={index} index={index} />
+              <Images
+                img={img}
+                key={index}
+                index={index}
+                title={p.title}
+                length={p.images.length}
+              />
             ))}
         </ImagesWrap>
       </Wrap>
@@ -92,9 +101,9 @@ const Demo = styled.a`
 `;
 
 const DetailWrap = styled.div`
-  width: 600px;
-  margin: 15px 0;
-  padding: 15px;
+  width: 100%;
+  margin: 30px 0;
+  /* padding: 15px; */
   display: flex;
   flex-direction: column;
 `;
@@ -133,6 +142,8 @@ const ImagesWrap = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 22px;
+  position: relative;
+  z-index: 1;
   @media (max-width: 780px) {
     grid-template-columns: 1fr;
   }
