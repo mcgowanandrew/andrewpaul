@@ -45,6 +45,8 @@ const Contact = ({ className }) => {
             className='a'
             id='Name'
             placeholder='Name'
+            onFocus={(e) => (e.target.placeholder = '')}
+            onBlur={(e) => (e.target.placeholder = 'Name')}
             type='text'
             name='user_name'
             required={true}
@@ -53,7 +55,9 @@ const Contact = ({ className }) => {
             className='b'
             id='email'
             placeholder='Email'
-            type='text'
+            onFocus={(e) => (e.target.placeholder = '')}
+            onBlur={(e) => (e.target.placeholder = 'Email')}
+            type='email'
             name='user_email'
             required={true}
           />
@@ -61,6 +65,8 @@ const Contact = ({ className }) => {
             className='c'
             id='Subject'
             placeholder='Subject'
+            onFocus={(e) => (e.target.placeholder = '')}
+            onBlur={(e) => (e.target.placeholder = 'Subject')}
             type='text'
             name='subject'
             required={true}
@@ -69,6 +75,8 @@ const Contact = ({ className }) => {
             className='d'
             id='message'
             placeholder='Message'
+            onFocus={(e) => (e.target.placeholder = '')}
+            onBlur={(e) => (e.target.placeholder = 'Message')}
             wrap='hard'
             type='text'
             name='message'
