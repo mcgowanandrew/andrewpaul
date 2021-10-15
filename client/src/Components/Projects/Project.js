@@ -103,7 +103,10 @@ const Demo = styled.a`
 const DetailWrap = styled.div`
   width: 100%;
   margin: 30px 0;
+<<<<<<< HEAD
   /* padding: 15px; */
+=======
+>>>>>>> 551a52a59e1ad14b2bc1a7a99d2819b5e1d7d6af
   display: flex;
   flex-direction: column;
 `;
