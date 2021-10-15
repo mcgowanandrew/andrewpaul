@@ -4,7 +4,7 @@ import img from './images/404background.jpg';
 
 const ErrorPage = () => {
     return <Wrap>
-      <Span>404</Span>
+        <Span>404</Span>    
   </Wrap>;
 };
 

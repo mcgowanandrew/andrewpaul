@@ -11,9 +11,9 @@ const Contact = ({ className }) => {
       .querySelectorAll('input,textarea')
       .forEach((input) => (input.value = ''));
   };
+
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         'service_gacrepd',
@@ -32,6 +32,7 @@ const Contact = ({ className }) => {
         }
       );
   };
+
   return (
     <BigWrap className={className}>
       <Wrap>
@@ -64,7 +65,6 @@ const Contact = ({ className }) => {
             name='subject'
             required={true}
           />
-
           <TextArea
             className='d'
             id='message'
@@ -90,6 +90,7 @@ const Contact = ({ className }) => {
     </BigWrap>
   );
 };
+
 const SmallWrap = styled.div`
   width: 630px;
   display: flex;
@@ -99,6 +100,7 @@ const SmallWrap = styled.div`
     width: 100%;
   }
 `;
+
 const Success = styled.span`
   width: 100%;
   font-size: 14px;
@@ -106,6 +108,7 @@ const Success = styled.span`
   margin-bottom: ${({ open }) => (open ? '15px' : '0')};
   transition: all 0.6s ease-in-out;
 `;
+
 const Wrap = styled.div`
   width: 600px;
   margin: 0 auto;
@@ -113,6 +116,7 @@ const Wrap = styled.div`
     width: 300px;
   }
 `;
+
 const BigWrap = styled.div`
   width: 100vw;
   height: 100vh;
@@ -135,8 +139,6 @@ const FormButton = styled.button`
   color: #030205;
   margin-left: 15px;
   font-weight: bold;
-  &:before {
-  }
   &:hover {
     background-color: #030205;
     color: #faf7ff;
@@ -144,6 +146,7 @@ const FormButton = styled.button`
     transition: all 0.3s ease-in-out;
   }
 `;
+
 const ButtonWrap = styled.div`
   display: flex;
   /* justify-content: space-between;
@@ -155,6 +158,7 @@ const ButtonWrap = styled.div`
     flex-direction: column;
   }
 `;
+
 const TextArea = styled.textarea`
   height: 300px;
   max-width: 100%;
@@ -168,6 +172,7 @@ const TextArea = styled.textarea`
     outline: none;
   }
 `;
+
 const Input = styled.input`
   width: 100%;
   border: 2px solid #faf7ff;
