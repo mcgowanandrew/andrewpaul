@@ -26,6 +26,10 @@ const Contact = ({ className }) => {
           console.log('sucress', result.text);
           e.target.reset();
           setSuccess(true);
+          setTimeout(() => {
+            setSuccess(false);
+          }, 5000);
+          
         },
         (error) => {
           console.log('error', error.text);
@@ -114,6 +118,7 @@ const Success = styled.span`
   font-size: 14px;
   visibility: ${({ open }) => (open ? 'visible' : 'hidden')};
   margin-bottom: ${({ open }) => (open ? '15px' : '0')};
+  opacity:${({ open }) => (open ? '1':'0')};
   transition: all 0.6s ease-in-out;
 `;
 
