@@ -100,7 +100,7 @@ const Contact = ({ className }) => {
 };
 
 const SmallWrap = styled.div`
-  width: 630px;
+  width:30%;
   display: flex;
   justify-content: flex-end;
   @media (max-width: 619px) {
@@ -110,9 +110,9 @@ const SmallWrap = styled.div`
 `;
 
 const Success = styled.span`
-  width: 100%;
+  width: 70%;
   font-size: 14px;
-  display: ${({ open }) => (open ? 'inline' : 'none')};
+  visibility: ${({ open }) => (open ? 'visible' : 'hidden')};
   margin-bottom: ${({ open }) => (open ? '15px' : '0')};
   transition: all 0.6s ease-in-out;
 `;
@@ -157,10 +157,10 @@ const FormButton = styled.button`
 
 const ButtonWrap = styled.div`
   display: flex;
-  /* justify-content: space-between;
-  align-items: baseline; */
-  flex-direction: column;
-  width: 614px;
+  justify-content: space-between;
+  align-items: baseline;
+  /* flex-direction: column; */
+  width: 100%;
   @media (max-width: 619px) {
     width: 314px;
     flex-direction: column;
@@ -170,7 +170,6 @@ const ButtonWrap = styled.div`
 const TextArea = styled.textarea`
   height: 300px;
   max-width: 100%;
-  min-width: 100%;
   resize: none;
   border: 2px solid #faf7ff;
   background-color: #030205;
@@ -182,7 +181,7 @@ const TextArea = styled.textarea`
 `;
 
 const Input = styled.input`
-  width: 100%;
+  max-width: 100%;
   border: 2px solid #faf7ff;
   background-color: #030205;
   color: #faf7ff;
