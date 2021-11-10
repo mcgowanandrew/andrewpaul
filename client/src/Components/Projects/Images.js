@@ -2,28 +2,45 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Modal from '../Modal/Modal';
 
-const Images = ({ img, index }) => {
+const Images = ({ img, index, title, length }) => {
   const [imageOpen, setImageOpen] = useState(false);
+  const [current, setCurrent] = useState(index);
+
+// pass props down to modal
+  const nextImg = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevImg = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+  // console.log('length',length);
+  // console.log('img',img.img);
+  console.log('index', current);
+
 
   return (
     <>
-      {' '}
       <Img
         key={index}
         onClick={() => setImageOpen(index)}
         src={img.img}
-        alt='Project Image'
-      />{' '}
+        alt={title}
+      />
       <Modal open={imageOpen === index}>
         <ImgWrap>
-          <Img2 key={index} src={img.img} alt='Project image' />
+          {current === index && <Img2 key={index} index={current} src={img.img} alt={title} />}
           <ButWrap>
-            <Button onClick={() => setImageOpen(false)}>Close</Button>{' '}
+            <Button onClick={prevImg}>Prev</Button>
+            <Button onClick={nextImg}>Next</Button>
+            <Button onClick={() => setImageOpen(false)}>Close</Button>
           </ButWrap>
         </ImgWrap>
       </Modal>
     </>
+    
   );
+  
 };
 
 const Img2 = styled.img`
@@ -64,8 +81,7 @@ const Button = styled.button`
   background-color: #faf7ff;
   color: #030205;
   font-weight: bold;
-  &:before {
-  }
+  margin-left: 15px;
   &:hover {
     transition: all 0.3s ease-in-out;
     color: #faf7ff;

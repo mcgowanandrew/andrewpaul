@@ -21,9 +21,6 @@ const Menu = ({ open, setOpen }) => {
         <Nav to='/about' onClick={closeClick}>
           About
         </Nav>
-        <Nav to='/cv' onClick={closeClick}>
-          C.V.
-        </Nav>
         <Nav to='/projects' onClick={closeClick}>
           Projects
         </Nav>
