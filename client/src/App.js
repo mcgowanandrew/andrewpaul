@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Homepage, Header, Menu, Project } from './Components';
-import { About, Contact, ProjectPage,ErrorPage } from './Pages';
+import { About, Contact, ProjectPage, ErrorPage } from './Pages';
 import GlobalStyles from './GlobalStyles';
 
 const App = () => {
@@ -35,4 +35,5 @@ const App = () => {
     </BrowserRouter>
   );
 };
+
 export default App;
