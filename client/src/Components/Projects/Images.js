@@ -4,19 +4,7 @@ import Modal from '../Modal/Modal';
 
 const Images = ({ img, index, title, length }) => {
   const [imageOpen, setImageOpen] = useState(false);
-  const [current, setCurrent] = useState(index);
 
-// pass props down to modal
-  const nextImg = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-
-  const prevImg = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
-  // console.log('length',length);
-  // console.log('img',img.img);
-  console.log('index', current);
 
 
   return (
@@ -29,10 +17,8 @@ const Images = ({ img, index, title, length }) => {
       />
       <Modal open={imageOpen === index}>
         <ImgWrap>
-          {current === index && <Img2 key={index} index={current} src={img.img} alt={title} />}
+          <Img2 key={index} src={img.img} alt={title} />
           <ButWrap>
-            <Button onClick={prevImg}>Prev</Button>
-            <Button onClick={nextImg}>Next</Button>
             <Button onClick={() => setImageOpen(false)}>Close</Button>
           </ButWrap>
         </ImgWrap>
