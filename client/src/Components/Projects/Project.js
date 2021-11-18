@@ -61,7 +61,6 @@ const Project = () => {
                 key={index}
                 index={index}
                 title={p.title}
-                length={p.images.length}
               />
             ))}
         </ImagesWrap>

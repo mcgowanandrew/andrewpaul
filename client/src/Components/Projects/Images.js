@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Modal from '../Modal/Modal';
 
-const Images = ({ img, index, title, length }) => {
+const Images = ({ img, index, title }) => {
   const [imageOpen, setImageOpen] = useState(false);
-
-
 
   return (
     <>
@@ -24,9 +22,7 @@ const Images = ({ img, index, title, length }) => {
         </ImgWrap>
       </Modal>
     </>
-    
   );
-  
 };
 
 const Img2 = styled.img`
