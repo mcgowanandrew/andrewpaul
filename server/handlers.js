@@ -20,4 +20,3 @@ const getProjectByTitle = (req, res) => {
 };
 
 module.exports = { getAllProjects, getProjectByTitle };
-// 
