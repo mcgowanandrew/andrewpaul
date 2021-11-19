@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Homepage, Header, Menu, Project } from './Components';
-import { About, Contact, ProjectPage, ErrorPage } from './Pages';
+import { About, Contact, ProjectPage, ErrorPage, Cv } from './Pages';
 import GlobalStyles from './GlobalStyles';
 
 const App = () => {
@@ -18,6 +18,9 @@ const App = () => {
         </Route>
         <Route exact path='/about'>
           <About />
+        </Route>
+        <Route exact path='/cv'>
+          <Cv />
         </Route>
         <Route exact path='/projects'>
           <ProjectPage />
