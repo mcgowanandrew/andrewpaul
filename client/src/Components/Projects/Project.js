@@ -18,7 +18,6 @@ const Project = () => {
       })
       .catch((error) => {
         console.log('Error:', error);
-        //create an error page
       });
   }, [title]);
 
