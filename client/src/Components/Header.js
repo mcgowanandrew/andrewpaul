@@ -23,7 +23,11 @@ const Header = ({ open, setOpen }) => {
       <SocialWrap>
         <StyledAiFillInstagram
           onClick={() =>
-            window.open('https://www.instagram.com/helloandrewpaul', '_blank')
+            window.open(
+              'https://www.instagram.com/helloandrewpaul/',
+              '_blank',
+              'noopener noreferrer'
+            )
           }
           size={25}
         />
@@ -31,14 +35,19 @@ const Header = ({ open, setOpen }) => {
           onClick={() =>
             window.open(
               'https://www.linkedin.com/in/helloandrewpaul/',
-              '_blank'
+              '_blank',
+              'noopener noreferrer'
             )
           }
           size={25}
         />
         <StyledAiFillGithub
           onClick={() =>
-            window.open('https://github.com/helloandrewpaul', '_blank')
+            window.open(
+              'https://github.com/helloandrewpaul',
+              '_blank',
+              'noopener noreferrer'
+            )
           }
           size={25}
         />
