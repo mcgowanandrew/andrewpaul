@@ -6,7 +6,6 @@ body{
  
     background-color: #030205;
     color:#faf7ff;
-    font-size: 10px;
     font-family: 'DM Sans', sans-serif;
 }
 a{

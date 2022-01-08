@@ -22,7 +22,7 @@ const About = () => {
   );
 };
 
-const TextWrap = styled.div`
+const TextWrap = styled.section`
   width: 630px;
   margin: 30px auto;
   padding: 0 15px;
@@ -31,7 +31,7 @@ const TextWrap = styled.div`
   }
 `;
 
-const Text = styled.span`
+const Text = styled.p`
   font-size: 20px;
 `;
 

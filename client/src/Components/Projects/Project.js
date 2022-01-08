@@ -32,7 +32,7 @@ const Project = () => {
             <Title>{p.title}</Title>
             <DemoWrap>
               {p.demo && (
-                <Demo href={p.demo} target='_blank'rel='noopener noreferrer'>
+                <Demo href={p.demo} target='_blank' rel='noopener noreferrer'>
                   Demo
                 </Demo>
               )}
@@ -53,12 +53,7 @@ const Project = () => {
         <ImagesWrap>
           {p.images &&
             p.images.map((img, index) => (
-              <Images
-                img={img}
-                key={index}
-                index={index}
-                title={p.title}
-              />
+              <Images img={img} key={index} index={index} title={p.title} />
             ))}
         </ImagesWrap>
       </Wrap>
@@ -66,13 +61,13 @@ const Project = () => {
   );
 };
 
-const Description = styled.span`
+const Description = styled.p`
   font-size: 15px;
   width: 100%;
   height: auto;
 `;
 
-const DemoWrap = styled.div`
+const DemoWrap = styled.section`
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -86,7 +81,9 @@ const TopWrap = styled.div`
   width: 100%;
 `;
 
-const Title = styled.span`
+const Title = styled.h3`
+  font-weight: normal;
+  margin: 0px;
   font-size: 22px;
   width: 100%;
 `;
@@ -96,10 +93,9 @@ const Demo = styled.a`
   margin-left: 10px;
 `;
 
-const DetailWrap = styled.div`
+const DetailWrap = styled.section`
   width: 100%;
   margin: 30px 0;
-  /* padding: 15px; */
   display: flex;
   flex-direction: column;
 `;
