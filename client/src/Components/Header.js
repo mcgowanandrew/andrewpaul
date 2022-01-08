@@ -138,7 +138,9 @@ const Nav = styled(NavLink)`
     transform-origin: left;
   }
 `;
-const Title = styled.div`
+const Title = styled.h1`
+  margin: 0;
+  font-weight: normal;
   font-size: 30px;
   padding: 15px;
   &:hover {

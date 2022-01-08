@@ -84,14 +84,16 @@ const Cv = () => {
   );
 };
 
-const Heading = styled.div`
+const Heading = styled.h5`
+margin: 0;
+font-weight:normal;
   font-size: 20px;
   border-bottom: 1px solid #fff;
   display: inline-block;
   padding-bottom: 1px;
   margin-bottom: 10px;
 `;
-const TextWrap = styled.div`
+const TextWrap = styled.section`
   width: 630px;
   margin: 30px auto;
   padding: 0 15px;
@@ -100,7 +102,7 @@ const TextWrap = styled.div`
   }
 `;
 
-const Text = styled.span`
+const Text = styled.p`
   font-size: 16px;
 `;
 

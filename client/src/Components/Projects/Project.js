@@ -83,7 +83,7 @@ const TopWrap = styled.div`
 
 const Title = styled.h3`
   font-weight: normal;
-  margin: 0px;
+  margin: 0;
   font-size: 22px;
   width: 100%;
 `;
