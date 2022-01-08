@@ -23,8 +23,6 @@ const Project = () => {
 
   let p = project;
 
-
-
   return (
     <BigWrap>
       <Wrap>
