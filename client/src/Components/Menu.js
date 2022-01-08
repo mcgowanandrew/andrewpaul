@@ -16,7 +16,7 @@ const Menu = ({ open, setOpen }) => {
     setOpen(false);
   };
   return (
-    <Div open={open}>
+    <Aside open={open}>
       <Content>
         <Nav to='/about' onClick={closeClick}>
           About
@@ -60,7 +60,7 @@ const Menu = ({ open, setOpen }) => {
           />
         </SocialWrap>
       </Content>
-    </Div>
+    </Aside>
   );
 };
 const StyledAiFillInstagram = styled(AiFillInstagram)`
@@ -87,7 +87,7 @@ const StyledAiFillGithub = styled(AiFillGithub)`
   }
 `;
 
-const SocialWrap = styled.div`
+const SocialWrap = styled.article`
   margin-top: 10px;
 `;
 
@@ -112,13 +112,13 @@ const Nav = styled(NavLink)`
     transform-origin: left;
   }
 `;
-const Content = styled.div`
+const Content = styled.nav`
   margin-top: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
-const Div = styled.div`
+const Aside = styled.aside`
   width: 100%;
   height: 120%;
   background-color: rgba(0, 0, 0, 0.9);
