@@ -72,7 +72,7 @@ const BurgWrap = styled.div`
   }
 `;
 
-const NavWrap = styled.div`
+const NavWrap = styled.nav`
   padding: 18px;
   margin-right: 45px;
   @media (max-width: 780px) {
