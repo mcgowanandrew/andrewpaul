@@ -151,7 +151,7 @@ const Title = styled.div`
   }
 `;
 
-const HeadWrap = styled.div`
+const HeadWrap = styled.header`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
