@@ -21,39 +21,37 @@ const Project = () => {
       });
   }, [title]);
 
-  let p = project;
-
   return (
     <BigWrap>
       <Wrap>
-        <Img src={p.headerImg} alt={p.title} />
+        <Img src={project.headerImg} alt={project.title} />
         <DetailWrap>
           <TopWrap>
-            <Title>{p.title}</Title>
+            <Title>{project.title}</Title>
             <DemoWrap>
-              {p.demo && (
-                <Demo href={p.demo} target='_blank' rel='noopener noreferrer'>
+              {project.demo && (
+                <Demo href={project.demo} target='_blank' rel='noopener noreferrer'>
                   Demo
                 </Demo>
               )}
-              {p.github && (
-                <Demo href={p.github} target='_blank' rel='noopener noreferrer'>
+              {project.github && (
+                <Demo href={project.github} target='_blank' rel='noopener noreferrer'>
                   GitHub
                 </Demo>
               )}
             </DemoWrap>
           </TopWrap>
           <Description>
-            {p.description}
+            {project.description}
             <br />
             <br />
-            {p.tech}
+            {project.tech}
           </Description>
         </DetailWrap>
         <ImagesWrap>
-          {p.images &&
-            p.images.map((img, index) => (
-              <Images img={img} key={index} index={index} title={p.title} />
+          {project.images &&
+            project.images.map((img, index) => (
+              <Images img={img} key={index} index={index} title={project.title} />
             ))}
         </ImagesWrap>
       </Wrap>
@@ -67,7 +65,7 @@ const Description = styled.p`
   height: auto;
 `;
 
-const DemoWrap = styled.section`
+const DemoWrap = styled.article`
   display: flex;
   justify-content: flex-end;
   width: 100%;
