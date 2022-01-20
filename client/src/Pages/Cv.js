@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Cv = () => {
-  
   return (
     <BigWrap>
       <TextWrap>
@@ -11,7 +10,8 @@ const Cv = () => {
           <br />
           2021 - Concordia University, Diploma in Full-Stack Web Development
           <br />
-          2011 - Rosemount Technology Centre, DVS in Digital Layout {'&'} Printing
+          2011 - Rosemount Technology Centre, DVS in Digital Layout {'&'}{' '}
+          Printing
           <br />
           <br />
           <Heading>Group Exhibitions:</Heading>
@@ -85,8 +85,8 @@ const Cv = () => {
 };
 
 const Heading = styled.h5`
-margin: 0;
-font-weight:normal;
+  margin: 0;
+  font-weight: normal;
   font-size: 20px;
   border-bottom: 1px solid #fff;
   display: inline-block;

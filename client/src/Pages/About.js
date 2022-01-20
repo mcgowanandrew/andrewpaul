@@ -12,7 +12,7 @@ const About = () => {
           Node.js, Express and MongoDB.
           <br />
           <br />
-          Currently learning Gatsby {'&'} Sass.
+          Currently learning PHP, Drupal {'&'} Sass.
           <br />
           <br />
           Outside of Web Development I'm a Photographer and a Bookbinder.
