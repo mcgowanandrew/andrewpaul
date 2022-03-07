@@ -23,7 +23,6 @@ const Contact = ({ className }) => {
       )
       .then(
         (result) => {
-          console.log('sucress', result.text);
           e.target.reset();
           setSuccess(true);
           setTimeout(() => {
