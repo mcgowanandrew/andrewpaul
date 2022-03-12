@@ -28,7 +28,7 @@ const Contact = ({ className }) => {
           setTimeout(() => {
             setSuccess(false);
           }, 5000);
-          
+
         },
         (error) => {
           console.log('error', error.text);
@@ -106,15 +106,15 @@ const SmallWrap = styled.div`
   width:30%;
   display: flex;
   justify-content: flex-end;
-  @media (max-width: 619px) {
-    width: 300px;
+  @media (max-width: 38.688rem) {
+    width: 18.75rem;
     width: 100%;
   }
 `;
 
 const Success = styled.span`
   width: 70%;
-  font-size: 14px;
+  font-size: 0.875rem;
   visibility: ${({ open }) => (open ? 'visible' : 'hidden')};
   margin-bottom: ${({ open }) => (open ? '15px' : '0')};
   opacity:${({ open }) => (open ? '1':'0')};
@@ -122,10 +122,10 @@ const Success = styled.span`
 `;
 
 const Wrap = styled.div`
-  width: 600px;
+  width: 37.5rem;
   margin: 0 auto;
-  @media (max-width: 619px) {
-    width: 300px;
+  @media (max-width: 38.688rem) {
+    width: 18.75rem;
   }
 `;
 
@@ -146,10 +146,10 @@ const BigWrap = styled.div`
 
 const FormButton = styled.button`
   border: 2px solid #faf7ff;
-  padding: 5px 10px;
+  padding: 0.313rem 0.625rem;
   background-color: #faf7ff;
   color: #030205;
-  margin-left: 15px;
+  margin-left: 0.938rem;
   font-weight: bold;
   &:hover {
     background-color: #030205;
@@ -163,22 +163,21 @@ const ButtonWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  /* flex-direction: column; */
   width: 100%;
-  @media (max-width: 619px) {
-    width: 314px;
+  @media (max-width: 38.688rem) {
+    width: 19.625rem;
     flex-direction: column;
   }
 `;
 
 const TextArea = styled.textarea`
-  height: 300px;
+  height: 18.75rem;
   max-width: 100%;
   resize: none;
   border: 2px solid #faf7ff;
   background-color: #030205;
   color: #faf7ff;
-  padding: 5px;
+  padding: 0.313rem;
   :focus {
     outline: none;
   }
@@ -189,7 +188,7 @@ const Input = styled.input`
   border: 2px solid #faf7ff;
   background-color: #030205;
   color: #faf7ff;
-  padding: 5px;
+  padding: 0.313rem;
   :focus {
     outline: none;
   }
@@ -219,11 +218,11 @@ const FormWrap = styled.form`
     'subject subject subject'
     'message message message'
     'button button button';
-  gap: 15px;
-  width: 600px;
-  margin: 15px auto;
-  @media (max-width: 619px) {
-    width: 300px;
+  gap: 0.938rem;
+  width: 37.5rem;
+  margin: 0.938rem auto;
+  @media (max-width: 38.688rem) {
+    width: 18.75rem;
     display: flex;
     flex-direction: column;
   }
