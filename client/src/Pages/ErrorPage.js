@@ -4,16 +4,14 @@ import img from './images/404background.jpg';
 
 const ErrorPage = () => {
     return <Wrap>
-        <Span>404</Span>    
+        <Span>404</Span>
   </Wrap>;
 };
-
-export default ErrorPage;
 
 const Span = styled.span`
 display:grid;
 place-items:center;
-font-size: 350px;
+font-size: 21.875rem;
 `
 
 const Wrap = styled.div`
@@ -37,3 +35,5 @@ const Wrap = styled.div`
     }
   }
 `;
+
+export default ErrorPage;
