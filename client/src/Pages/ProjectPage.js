@@ -26,7 +26,6 @@ const Projects = () => {
   );
 };
 
-
 const BigWrap = styled.div`
   transition: all 1s ease-out;
   animation: fadein 1s ease-out;
@@ -39,4 +38,5 @@ const BigWrap = styled.div`
     }
   }
 `;
+
 export default Projects;
