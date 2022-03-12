@@ -23,16 +23,16 @@ const About = () => {
 };
 
 const TextWrap = styled.section`
-  width: 630px;
-  margin: 30px auto;
-  padding: 0 15px;
-  @media (max-width: 660px) {
+  width: 39.375rem;
+  margin: 1.875rem auto;
+  padding: 0 0.938rem;
+  @media (max-width: 41.25rem) {
     width: 90%;
   }
 `;
 
 const Text = styled.p`
-  font-size: 20px;
+  font-size: 1.25rem;
 `;
 
 const BigWrap = styled.div`
@@ -47,4 +47,5 @@ const BigWrap = styled.div`
     }
   }
 `;
+
 export default About;
