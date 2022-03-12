@@ -11,6 +11,7 @@ const Header = ({ open, setOpen }) => {
     history.push('/');
     setOpen(false);
   };
+
   return (
     <HeadWrap>
       <Title onClick={homepageClick}>Andrew Paul</Title>
@@ -65,17 +66,17 @@ const Header = ({ open, setOpen }) => {
 };
 
 const BurgWrap = styled.div`
-  padding: 0 15px 13px 0;
+  padding: 0 0.938rem 0.813rem 0;
   display: none;
-  @media (max-width: 780px) {
+  @media (max-width: 48.75rem) {
     display: block;
   }
 `;
 
 const NavWrap = styled.nav`
-  padding: 18px;
-  margin-right: 45px;
-  @media (max-width: 780px) {
+  padding: 1.125rem;
+  margin-right: 2.813rem;
+  @media (max-width: 48.75rem) {
     display: none;
   }
 `;
@@ -105,19 +106,19 @@ const StyledAiFillGithub = styled(AiFillGithub)`
   }
 `;
 const SocialWrap = styled.div`
-  padding: 20px;
-  width: 100px;
+  padding: 1.25rem;
+  width: 6.25rem;
   display: flex;
   justify-content: space-between;
-  @media (max-width: 780px) {
+  @media (max-width: 48.75rem) {
     display: none;
   }
 `;
 
 const Nav = styled(NavLink)`
-  font-size: 20px;
-  padding-bottom: 5px;
-  margin: 0 15px;
+  font-size: 1.25rem;
+  padding-bottom: 0.313rem;
+  margin: 0 0.938rem;
   &.active {
     color: #666;
   }
@@ -141,13 +142,13 @@ const Nav = styled(NavLink)`
 const Title = styled.h1`
   margin: 0;
   font-weight: normal;
-  font-size: 30px;
-  padding: 15px;
+  font-size: 1.875rem;
+  padding: 0.938rem;
   &:hover {
     cursor: pointer;
     color: #666;
     transition: all 0.3s ease-in-out;
-    @media (max-width: 780px) {
+    @media (max-width: 48.75rem) {
       color: #fff;
     }
   }
