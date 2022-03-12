@@ -67,13 +67,14 @@ const Menu = ({ open, setOpen }) => {
   );
 };
 const StyledAiFillInstagram = styled(AiFillInstagram)`
-  margin-right: 10px;
+  margin-right: 0.625rem;
   &:hover {
     color: #666;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
 `;
+
 const StyledAiFillLinkedin = styled(AiFillLinkedin)`
   &:hover {
     color: #666;
@@ -81,8 +82,9 @@ const StyledAiFillLinkedin = styled(AiFillLinkedin)`
     cursor: pointer;
   }
 `;
+
 const StyledAiFillGithub = styled(AiFillGithub)`
-  margin-left: 10px;
+  margin-left: 0.625rem;
   &:hover {
     color: #666;
     transition: all 0.3s ease-in-out;
@@ -91,18 +93,17 @@ const StyledAiFillGithub = styled(AiFillGithub)`
 `;
 
 const SocialWrap = styled.article`
-  margin-top: 10px;
+  margin-top: 0.625rem;
 `;
 
 const Nav = styled(NavLink)`
-  font-size: 20px;
-  padding-bottom: 5px;
-  margin: 10px;
+  font-size: 1.25rem;
+  padding-bottom: 0.313rem;
+  margin: 0.625rem;
   ::after {
     content: '';
     position: absolute;
-    left: 0;
-    bottom: 0;
+    inset: auto auto 0 0;
     width: 100%;
     height: 2px;
     background: #666;
@@ -115,19 +116,21 @@ const Nav = styled(NavLink)`
     transform-origin: left;
   }
 `;
+
 const Content = styled.nav`
-  margin-top: 170px;
+  margin-top: 10.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
+
 const Aside = styled.aside`
   width: 100%;
   height: 120%;
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   z-index: 3;
-  margin-top: -70px;
+  margin-top: -4.375rem;
   transition: all 0.8s ease-in-out;
   opacity: ${({ open }) => (open ? '1' : '0')};
   right: ${({ open }) => (open ? '0' : '-100%')};

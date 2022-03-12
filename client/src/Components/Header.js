@@ -89,6 +89,7 @@ const StyledAiFillInstagram = styled(AiFillInstagram)`
     cursor: pointer;
   }
 `;
+
 const StyledAiFillLinkedin = styled(AiFillLinkedin)`
   color: #faf7ff;
   &:hover {
@@ -97,6 +98,7 @@ const StyledAiFillLinkedin = styled(AiFillLinkedin)`
     cursor: pointer;
   }
 `;
+
 const StyledAiFillGithub = styled(AiFillGithub)`
   color: #faf7ff;
   &:hover {
@@ -105,6 +107,7 @@ const StyledAiFillGithub = styled(AiFillGithub)`
     cursor: pointer;
   }
 `;
+
 const SocialWrap = styled.div`
   padding: 1.25rem;
   width: 6.25rem;
@@ -139,6 +142,7 @@ const Nav = styled(NavLink)`
     transform-origin: left;
   }
 `;
+
 const Title = styled.h1`
   margin: 0;
   font-weight: normal;
@@ -162,4 +166,5 @@ const HeadWrap = styled.header`
   position: relative;
   z-index: 10;
 `;
+
 export default Header;
