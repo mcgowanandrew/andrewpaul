@@ -15,10 +15,7 @@ const Modal = ({ open, children }) => {
 
 const Overlay = styled.div`
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   display: grid;
   place-items: center;
   background-color: rgba(3, 2, 5, 0.9);
@@ -36,9 +33,9 @@ const Overlay = styled.div`
 `;
 
 const ModalDiv = styled.div`
-  padding: 30px;
+  padding: 1.875rem;
   z-index: 1000;
-  max-width: 650px;
+  max-width: 40.625rem;
   transition: all 0.5s ease-out;
   animation: fadein 0.5s ease-out;
   @keyframes fadein {

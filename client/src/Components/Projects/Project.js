@@ -60,7 +60,7 @@ const Project = () => {
 };
 
 const Description = styled.p`
-  font-size: 15px;
+  font-size: 0.938rem;
   width: 100%;
   height: auto;
 `;
@@ -74,7 +74,7 @@ const DemoWrap = styled.article`
 const TopWrap = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 0.938rem;
   align-items: flex-end;
   width: 100%;
 `;
@@ -82,26 +82,26 @@ const TopWrap = styled.div`
 const Title = styled.h3`
   font-weight: normal;
   margin: 0;
-  font-size: 22px;
+  font-size: 1.375rem;
   width: 100%;
 `;
 
 const Demo = styled.a`
-  font-size: 18px;
-  margin-left: 10px;
+  font-size: 1.125rem;
+  margin-left: 0.625rem;
 `;
 
 const DetailWrap = styled.section`
   width: 100%;
-  margin: 30px 0;
+  margin: 1.875rem 0;
   display: flex;
   flex-direction: column;
 `;
 
 const Wrap = styled.div`
   margin: 0 auto;
-  padding: 30px;
-  max-width: 630px;
+  padding: 1.875rem;
+  max-width: 39.375rem;
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
@@ -128,13 +128,13 @@ const BigWrap = styled.div`
 `;
 
 const ImagesWrap = styled.div`
-  max-width: 630px;
+  max-width: 39.375rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 22px;
+  gap: 1.375rem;
   position: relative;
   z-index: 1;
-  @media (max-width: 780px) {
+  @media (max-width: 48.75rem) {
     grid-template-columns: 1fr;
   }
 `;

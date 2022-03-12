@@ -27,14 +27,15 @@ const Images = ({ img, index, title }) => {
 
 const Img2 = styled.img`
   max-width: 100%;
-  margin: 15px;
+  margin: 0.938rem;
 `;
+
 const Img = styled.img`
-  width: 195px;
-  height: 195px;
+  width: 12.18rem;
+  height: 12.18rem;
   overflow: hidden;
   object-fit: cover;
-  @media (max-width: 780px) {
+  @media (max-width: 48.75rem) {
     width: 100%;
     height: auto;
   }
@@ -45,25 +46,27 @@ const Img = styled.img`
     transform: scale(1.02);
   }
 `;
+
 const ButWrap = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin: 0 15px 15px;
+  margin: 0 0.938rem 0.938rem;
 `;
+
 const ImgWrap = styled.div`
   background-color: #030205;
-  max-width: 650px;
+  max-width: 40.625rem;
   display: flex;
   flex-direction: column;
 `;
 
 const Button = styled.button`
   border: 2px solid #faf7ff;
-  padding: 5px 10px;
+  padding: 0.313rem 0.625rem;
   background-color: #faf7ff;
   color: #030205;
   font-weight: bold;
-  margin-left: 15px;
+  margin-left: 0.938rem;
   &:hover {
     transition: all 0.3s ease-in-out;
     color: #faf7ff;

@@ -25,7 +25,7 @@ const AllProjects = ({ project }) => {
 };
 
 const Title = styled.div`
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
 `;
 
@@ -63,12 +63,12 @@ const Img = styled.img`
 `;
 const ProjectWrap = styled.div`
   margin: 0 auto;
-  padding: 30px;
-  max-width: 630px;
+  padding: 1.875rem;
+  max-width: 39.375rem;
   display: flex;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 15px;
+  gap: 0.938rem;
 `;
 const BigWrap = styled.div`
   transition: all 1s ease-out;
