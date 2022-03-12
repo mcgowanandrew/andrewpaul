@@ -87,23 +87,23 @@ const Cv = () => {
 const Heading = styled.h5`
   margin: 0;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   border-bottom: 1px solid #fff;
   display: inline-block;
   padding-bottom: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 `;
 const TextWrap = styled.section`
-  width: 630px;
-  margin: 30px auto;
-  padding: 0 15px;
-  @media (max-width: 660px) {
+  width: 39.375rem;
+  margin: 1.875rem auto;
+  padding: 0 0.938rem;
+  @media (max-width: 41.25rem) {
     width: 90%;
   }
 `;
 
 const Text = styled.p`
-  font-size: 16px;
+  font-size: 1rem;
 `;
 
 const BigWrap = styled.div`
