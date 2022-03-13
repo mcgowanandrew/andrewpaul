@@ -83,27 +83,27 @@ const NavWrap = styled.nav`
 
 const StyledAiFillInstagram = styled(AiFillInstagram)`
   color: #faf7ff;
+  transition: all 0.3s ease-in-out;
   &:hover {
     color: #666;
-    transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
 `;
 
 const StyledAiFillLinkedin = styled(AiFillLinkedin)`
   color: #faf7ff;
+  transition: all 0.3s ease-in-out;
   &:hover {
     color: #666;
-    transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
 `;
 
 const StyledAiFillGithub = styled(AiFillGithub)`
   color: #faf7ff;
+  transition: all 0.3s ease-in-out;
   &:hover {
     color: #666;
-    transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
 `;
@@ -148,12 +148,12 @@ const Title = styled.h1`
   font-weight: normal;
   font-size: 1.875rem;
   padding: 0.938rem;
+  transition: all 0.3s ease-in-out;
   &:hover {
     cursor: pointer;
     color: #666;
-    transition: all 0.3s ease-in-out;
     @media (max-width: 48.75rem) {
-      color: #fff;
+      color: #faf7ff;
     }
   }
 `;

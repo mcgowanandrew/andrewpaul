@@ -14,12 +14,11 @@ a{
     color: #faf7ff;
     margin-bottom: 3px;
     position: relative;
+    transition: all 0.3s ease-in-out;
 }
 
 a:hover{
     color:#666;
-    transition: all 0.3s ease-in-out;
-
 }
 `;
 

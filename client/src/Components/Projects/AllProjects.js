@@ -30,8 +30,7 @@ const Title = styled.div`
 `;
 
 const Hover = styled.div`
-  top: 0;
-  left: 0;
+  inset: 0 auto auto 0;
   position: absolute;
   display: grid;
   place-content: center;
@@ -40,12 +39,13 @@ const Hover = styled.div`
   width: 100%;
   z-index: 2;
   opacity: 0;
+  transition: all 0.5s ease-in-out;
   &:hover {
-    transition: all 0.5s ease-in-out;
     opacity: 1;
     cursor: pointer;
   }
 `;
+
 const ImgWrap = styled.div`
   position: relative;
   width: 100%;
@@ -61,6 +61,7 @@ const Img = styled.img`
     cursor: pointer;
   }
 `;
+
 const ProjectWrap = styled.div`
   margin: 0 auto;
   padding: 1.875rem;
@@ -70,6 +71,7 @@ const ProjectWrap = styled.div`
   grid-template-columns: 1fr;
   gap: 0.938rem;
 `;
+
 const BigWrap = styled.div`
   transition: all 1s ease-out;
   animation: fadein 1s ease-out;

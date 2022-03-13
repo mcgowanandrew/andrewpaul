@@ -35,12 +35,12 @@ const Img = styled.img`
   height: 12.18rem;
   overflow: hidden;
   object-fit: cover;
+  transition: all 0.3s ease-in-out;
   @media (max-width: 48.75rem) {
     width: 100%;
     height: auto;
   }
   &:hover {
-    transition: all 0.3s ease-in-out;
     cursor: pointer;
     filter: brightness(35%);
     transform: scale(1.02);
@@ -67,8 +67,8 @@ const Button = styled.button`
   color: #030205;
   font-weight: bold;
   margin-left: 0.938rem;
+  transition: all 0.3s ease-in-out;
   &:hover {
-    transition: all 0.3s ease-in-out;
     color: #faf7ff;
     background-color: #030205;
     cursor: pointer;

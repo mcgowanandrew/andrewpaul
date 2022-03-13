@@ -28,7 +28,6 @@ const Contact = ({ className }) => {
           setTimeout(() => {
             setSuccess(false);
           }, 5000);
-
         },
         (error) => {
           console.log('error', error.text);
@@ -151,11 +150,11 @@ const FormButton = styled.button`
   color: #030205;
   margin-left: 0.938rem;
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
   &:hover {
     background-color: #030205;
     color: #faf7ff;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
   }
 `;
 

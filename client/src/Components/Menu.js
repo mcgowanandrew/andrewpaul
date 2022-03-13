@@ -68,26 +68,26 @@ const Menu = ({ open, setOpen }) => {
 };
 const StyledAiFillInstagram = styled(AiFillInstagram)`
   margin-right: 0.625rem;
+  transition: all 0.3s ease-in-out;
   &:hover {
     color: #666;
-    transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
 `;
 
 const StyledAiFillLinkedin = styled(AiFillLinkedin)`
+  transition: all 0.3s ease-in-out;
   &:hover {
     color: #666;
-    transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
 `;
 
 const StyledAiFillGithub = styled(AiFillGithub)`
   margin-left: 0.625rem;
+  transition: all 0.3s ease-in-out;
   &:hover {
     color: #666;
-    transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
 `;
