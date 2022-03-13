@@ -13,8 +13,7 @@ const Project = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        const array = Object.values(data)[1];
-        setProject(array);
+        setProject(Object.values(data)[1]);
       })
       .catch((error) => {
         console.log('Error:', error);
