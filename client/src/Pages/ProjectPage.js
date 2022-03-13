@@ -9,8 +9,7 @@ const Projects = () => {
     fetch('https://andrew-paul.herokuapp.com/projects')
       .then((res) => res.json())
       .then((data) => {
-        const array = Object.values(data)[1];
-        setAllProjects(array);
+        setAllProjects(Object.values(data)[1]);
       })
       .catch((error) => {
         console.log('Error:', error);
@@ -27,7 +26,6 @@ const Projects = () => {
 };
 
 const BigWrap = styled.div`
-  transition: all 1s ease-out;
   animation: fadein 1s ease-out;
   @keyframes fadein {
     0% {
