@@ -6,6 +6,7 @@ const Homepage = () => {
   const [homeBg, setHomeBg] = useState([]);
 
   useEffect(() => {
+//     Generate random BG Img for homepage
     const background = bg.filter((obj) => obj.img)[
       Math.floor(Math.random() * bg.length)
     ];
