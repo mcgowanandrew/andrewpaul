@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const AllProjects = ({ project }) => {
-  let history = useHistory();
+  let navigate = useNavigate();
 
   const handleProjectClick = (e) => {
     e.preventDefault();
-    history.push(`/project/${project.title}`);
+    navigate(`/project/${project.title}`);
   };
 
   return (

@@ -5,13 +5,6 @@ import emailjs from 'emailjs-com';
 const Contact = ({ className }) => {
   const [success, setSuccess] = useState(false);
 
-  const handleClear = () => {
-    setSuccess(false);
-    document
-      .querySelectorAll('input,textarea')
-      .forEach((input) => (input.value = ''));
-  };
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -84,16 +77,13 @@ const Contact = ({ className }) => {
             name='message'
             required={true}
           />
-          <ButtonWrap className='e'>
+          <ButtonWrap className='e' >
             <Success open={success}>
               Thank you for contacting me, I will get back to you quickly.
             </Success>
-            <SmallWrap>
-              <FormButton onClick={() => handleClear()}>Reset</FormButton>
-              <FormButton type='submit' name='send'>
+              <FormButton type='submit' name='send' >
                 Send
               </FormButton>
-            </SmallWrap>
           </ButtonWrap>
         </FormWrap>
       </Wrap>
@@ -101,15 +91,6 @@ const Contact = ({ className }) => {
   );
 };
 
-const SmallWrap = styled.div`
-  width:30%;
-  display: flex;
-  justify-content: flex-end;
-  @media (max-width: 38.688rem) {
-    width: 18.75rem;
-    width: 100%;
-  }
-`;
 
 const Success = styled.span`
   width: 70%;
@@ -162,11 +143,10 @@ const ButtonWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  width: 100%;
+  max-width: 100%;
   @media (max-width: 38.688rem) {
     width: 19.625rem;
-    flex-direction: column;
-  }
+    align-items: flex-start;  }
 `;
 
 const TextArea = styled.textarea`
@@ -210,16 +190,16 @@ const FormWrap = styled.form`
     grid-area: button;
   }
   display: grid;
-  grid-template-columns: 1fr 0px 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    'name . email'
-    'subject subject subject'
-    'message message message'
-    'button button button';
-  gap: 0.938rem;
+    'name  email'
+    'subject subject'
+    'message message'
+    'button button';
+  gap: 1rem;
   width: 37.5rem;
-  margin: 0.938rem auto;
+  margin: 1rem auto;
   @media (max-width: 38.688rem) {
     width: 18.75rem;
     display: flex;

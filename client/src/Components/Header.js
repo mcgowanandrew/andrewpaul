@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink, useHistory } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { Squash as Hamburger } from 'hamburger-react';
 
 const Header = ({ open, setOpen }) => {
-  let history = useHistory();
+  let navigate = useNavigate();
 
   const homepageClick = () => {
-    history.push('/');
+    navigate('/');
     setOpen(false);
   };
 
