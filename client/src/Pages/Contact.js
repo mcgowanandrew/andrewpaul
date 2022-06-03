@@ -150,6 +150,8 @@ const ButtonWrap = styled.div`
 `;
 
 const TextArea = styled.textarea`
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
   height: 18.75rem;
   max-width: 100%;
   resize: none;
