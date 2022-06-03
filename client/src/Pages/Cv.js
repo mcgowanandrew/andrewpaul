@@ -16,7 +16,7 @@ const Cv = () => {
           <br />
           <Heading>Group Exhibitions:</Heading>
           <br />
-          2019 - Now That’s What I Call Love, Hart Club, London, UK
+          2019 - Now That{'’'}s What I Call Love, Hart Club, London, UK
           <br />
           2018 - Chania International Photo Festival, Center of the
           Mediterranean Architecture, Chania, Greece
@@ -29,7 +29,7 @@ const Cv = () => {
           <br />
           2013 - Nighted Life, Book {'&'} Job Gallery, San Francisco, CA
           <br />
-          2013 - Nobody Gives A Break (When You’re Down On Your Luck), Galerie
+          2013 - Nobody Gives A Break (When You{'’'}re Down On Your Luck), Galerie
           Nowhere, Montreal, QC
           <br />
           2011 - Snapshot Aesthetic, Black Box Gallery, Portland, OR
@@ -41,7 +41,7 @@ const Cv = () => {
           <br />
           2020 - Malaise, Self-published
           <br />
-          2019 - Now That’s What I Call Love, The Photocopy Club
+          2019 - Now That{'’'}s What I Call Love, The Photocopy Club
           <br />
           2018 - Issue #6: Psalms, Meanwhile Press
           <br />
@@ -59,7 +59,7 @@ const Cv = () => {
           <br />
           2013 - Poutine Dreams, P.D.C.
           <br />
-          2013 - Nobody Gives A Break (When You’re Down On Your Luck),
+          2013 - Nobody Gives A Break (When You{'’'}re Down On Your Luck),
           Exhibition Catalogue
           <br />
           2013 - Nighted Life Book, Nighted Life
