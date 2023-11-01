@@ -8,7 +8,7 @@ const Project = () => {
   const [project, setProject] = useState([]);
 
   useEffect(() => {
-    fetch(`https://andrew-paul.herokuapp.com/project/${title}`, {
+    fetch(`https://node-server-dev-fazc.3.us-1.fl0.io/${title}`, {
       method: 'GET',
     })
       .then((res) => res.json())
