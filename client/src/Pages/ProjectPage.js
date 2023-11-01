@@ -6,7 +6,7 @@ const Projects = () => {
   const [allProjects, setAllProjects] = useState([]);
 
   useEffect(() => {
-    fetch('https://node-server-dev-fazc.3.us-1.fl0.io/projects')
+    fetch('https://andrew-paul-a209f6ba61be.herokuapp.com/projects')
       .then((res) => res.json())
       .then((data) => {
         setAllProjects(Object.values(data)[1]);
