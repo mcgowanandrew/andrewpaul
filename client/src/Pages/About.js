@@ -9,10 +9,10 @@ const About = () => {
         <Text>
           👋 I'm an ex-Printer turned Full-Stack Web Developer. <br />
           <br />
-          Front-end: HTML, CSS/Sass, JavaScript ES6, React.js, jQuery, Twig  
-          Back-end: Node.js, Express, MongoDB, PHP, MySQL, MariaDB
-          CMS: Drupal, Wordpress 
-          Software: Visual Studio Code, Insomnia, Adobe Creative Suite, QuarkXPress
+          <bold>Front-end:</bold> HTML, CSS/Sass, JavaScript ES6, React.js, jQuery, Twig  
+          <bold>Back-end:</bold> Node.js, Express, MongoDB, PHP, MySQL, MariaDB
+          <bold>CMS:</bold> Drupal, Wordpress
+          <bold>Software:</bold> Visual Studio Code, Insomnia, Adobe Creative Suite, QuarkXPress
           <br />
           <br />
           Currently learning D3.js {'&'} Three.js
