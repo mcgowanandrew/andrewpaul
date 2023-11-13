@@ -8,11 +8,14 @@ const About = () => {
       <TextWrap>
         <Text>
           👋 I'm an ex-Printer turned Full-Stack Web Developer. <br />
-          <br />I am currently working with HTML, CSS, JavaScript, React.js,
-          Node.js, Express and MongoDB.
+          <br />
+          Front-end: HTML, CSS/Sass, JavaScript ES6, React.js, jQuery, Twig  
+          Back-end: Node.js, Express, MongoDB, PHP, MySQL, MariaDB
+          CMS: Drupal, Wordpress 
+          Software: Visual Studio Code, Insomnia, Adobe Creative Suite, QuarkXPress
           <br />
           <br />
-          Currently learning PHP, Drupal {'&'} Sass.
+          Currently learning D3.js {'&'} Three.js
           <br />
           <br />
           Outside of Web Development I'm a Photographer and a Bookbinder.
