@@ -16,6 +16,8 @@ const Cv = () => {
           <br />
           <Heading>Group Exhibitions:</Heading>
           <br />
+          2023 - Anarchy°1, ephemere., Tokyo, Japan
+          <br />
           2019 - Now That{'’'}s What I Call Love, Hart Club, London, UK
           <br />
           2018 - Chania International Photo Festival, Center of the
