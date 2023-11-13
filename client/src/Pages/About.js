@@ -7,11 +7,15 @@ const About = () => {
     <BigWrap>
       <TextWrap>
         <Text>
-          👋 I'm an ex-Printer turned Full-Stack Web Developer. <br />
+          👋 I'm an ex-Printer turned Full-Stack Web Developer.
           <br />
-          <b>Front-end:</b> HTML, CSS/Sass, JavaScript ES6, React.js, jQuery, Twig  
+          <br />
+          <b>Front-end:</b> HTML, CSS/Sass, JavaScript ES6, React.js, jQuery, Twig 
+          <br /> 
           <b>Back-end:</b> Node.js, Express, MongoDB, PHP, MySQL, MariaDB
+          <br />
           <b>CMS:</b> Drupal, Wordpress
+          <br />
           <b>Software:</b> Visual Studio Code, Insomnia, Adobe Creative Suite, QuarkXPress
           <br />
           <br />
