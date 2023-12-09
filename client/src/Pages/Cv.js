@@ -41,6 +41,8 @@ const Cv = () => {
           <br />
           <Heading>Publications:</Heading>
           <br />
+          2023 - Anarchyº1, ephemere.
+          <br />
           2020 - Malaise, Self-published
           <br />
           2019 - Now That{'’'}s What I Call Love, The Photocopy Club
