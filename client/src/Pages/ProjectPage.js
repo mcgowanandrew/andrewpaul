@@ -6,7 +6,7 @@ const Projects = () => {
   const [allProjects, setAllProjects] = useState([]);
 
   useEffect(() => {
-    fetch('https://node-server-dev-fazc.3.us-1.fl0.io')
+    fetch('https://node-server-dev-fazc.3.us-1.fl0.io/projects')
       .then((res) => res.json())
       .then((data) => {
         setAllProjects(Object.values(data)[1]);
