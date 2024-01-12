@@ -3,7 +3,7 @@
   "homepage": "http://andrewpaul.ca",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://node-server-dev-fazc.3.us-1.fl0.io",
+  "proxy": "https://node-server-ffdx.1.us-1.fl0.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
