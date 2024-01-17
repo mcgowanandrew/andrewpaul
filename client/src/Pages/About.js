@@ -19,9 +19,6 @@ const About = () => {
           <b>Software:</b> Visual Studio Code, Insomnia, Adobe Creative Suite, QuarkXPress
           <br />
           <br />
-          Currently learning D3.js {'&'} Three.js
-          <br />
-          <br />
           Outside of Web Development I'm a Photographer and a Bookbinder.
         </Text>
       </TextWrap>
