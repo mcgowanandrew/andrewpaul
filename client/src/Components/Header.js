@@ -1,22 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { Squash as Hamburger } from 'hamburger-react';
 
 const Header = ({ open, setOpen }) => {
-  let navigate = useNavigate();
-
-  const homepageClick = () => {
-    navigate('/');
-    setOpen(false);
-  };
 
   return (
     <HeadWrap>
-      <Title onClick={homepageClick}>Andrew Paul</Title>
-      <NavWrap>
-      </NavWrap>
+      <Title>Andrew Paul</Title>
       <SocialWrap>
         <StyledAiFillInstagram
           onClick={() =>
