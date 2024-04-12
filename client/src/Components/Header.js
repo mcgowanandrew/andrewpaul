@@ -8,7 +8,17 @@ const Header = ({ open, setOpen }) => {
 
   return (
     <HeadWrap>
+<<<<<<< HEAD
       <Title>Andrew Paul</Title>
+=======
+      <Title onClick={homepageClick}>Andrew Paul</Title>
+      <NavWrap>
+        <Nav to='/about'>About</Nav>
+        <Nav to='/cv'>C.V.</Nav>
+        <Nav to='/projects'>Projects</Nav>
+        <Nav to='/contact'>Contact</Nav>
+      </NavWrap>
+>>>>>>> parent of eec0904 (Update Header.js)
       <SocialWrap>
         <StyledAiFillInstagram
           onClick={() =>
