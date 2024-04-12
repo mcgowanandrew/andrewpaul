@@ -8,9 +8,7 @@ const Header = ({ open, setOpen }) => {
 
   return (
     <HeadWrap>
-<<<<<<< HEAD
       <Title>Andrew Paul</Title>
-=======
       <Title onClick={homepageClick}>Andrew Paul</Title>
       <NavWrap>
         <Nav to='/about'>About</Nav>
@@ -18,7 +16,6 @@ const Header = ({ open, setOpen }) => {
         <Nav to='/projects'>Projects</Nav>
         <Nav to='/contact'>Contact</Nav>
       </NavWrap>
->>>>>>> parent of eec0904 (Update Header.js)
       <SocialWrap>
         <StyledAiFillInstagram
           onClick={() =>
