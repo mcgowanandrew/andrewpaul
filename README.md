@@ -1,4 +1,4 @@
-## No longer online
+## Offline legacy project
 
 
 A personal portfolio built with: React, Nodejs, Express & Styled Components
